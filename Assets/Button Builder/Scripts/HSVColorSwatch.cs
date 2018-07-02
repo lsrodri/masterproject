@@ -18,6 +18,7 @@ public class HSVColorSwatch : MonoBehaviour {
 
   public InteractionSlider hSlider;
   public InteractionSlider sVSlider;
+  private GameObject colorLabel;
 
   [System.Serializable]
   public class ColorEvent : UnityEvent<Color> { }
@@ -35,15 +36,25 @@ public class HSVColorSwatch : MonoBehaviour {
   }
 
   public void Start() {
+        colorLabel = GameObject.Find("CustomLabel");
     resetColor();
   }
 
-  public void UpdateColor() {
-    swatchColor.value = new Vector3(hSlider.VerticalSliderValue, 1f, 1f);
-    Color color = new Vector3(hSlider.VerticalSliderValue, sVSlider.HorizontalSliderValue, sVSlider.VerticalSliderValue).HSVtoRGB();
-    GraphicColorEvent.Invoke(color);
-  }
-
+    public void UpdateColor()
+    {
+        swatchColor.value = new Vector3(hSlider.VerticalSliderValue, 1f, 1f);
+        Color color = new Vector3(hSlider.VerticalSliderValue, sVSlider.HorizontalSliderValue, sVSlider.VerticalSliderValue).HSVtoRGB();
+        GraphicColorEvent.Invoke(color);
+        //colorLabel.GetComponent().text = hSlider.VerticalSliderValue.ToString();
+        //colorLabel.GetComponent(typeof(TextMesh)).text = hSlider.VerticalSliderValue.ToString();
+        if (colorLabel)
+        {
+            colorLabel.GetComponent<TextMesh>().text = hSlider.VerticalSliderValue.ToString();
+        }
+        //TextMesh t = (TextMesh)colorLabel.GetComponent(typeof(TextMesh));
+        //t.text = "a" ;
+    }
+    
   public void resetColor() {
     if (swatchColor == null) { GetComponent<LeapGraphic>().GetFeatureData<CustomVectorChannelData>(); }
 
