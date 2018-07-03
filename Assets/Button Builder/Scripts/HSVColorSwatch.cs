@@ -42,17 +42,16 @@ public class HSVColorSwatch : MonoBehaviour {
 
     public void UpdateColor()
     {
-        swatchColor.value = new Vector3(hSlider.VerticalSliderValue, 1f, 1f);
+        /*swatchColor.value = new Vector3(hSlider.VerticalSliderValue, 1f, 1f);
         Color color = new Vector3(hSlider.VerticalSliderValue, sVSlider.HorizontalSliderValue, sVSlider.VerticalSliderValue).HSVtoRGB();
-        GraphicColorEvent.Invoke(color);
-        //colorLabel.GetComponent().text = hSlider.VerticalSliderValue.ToString();
-        //colorLabel.GetComponent(typeof(TextMesh)).text = hSlider.VerticalSliderValue.ToString();
+        GraphicColorEvent.Invoke(color);*/
+        
         if (colorLabel)
         {
-            colorLabel.GetComponent<TextMesh>().text = hSlider.VerticalSliderValue.ToString();
+            int i = (int)System.Math.Round((hSlider.VerticalSliderValue * 100), System.MidpointRounding.ToEven);
+            colorLabel.GetComponent<TextMesh>().text = i.ToString() + "%";
         }
-        //TextMesh t = (TextMesh)colorLabel.GetComponent(typeof(TextMesh));
-        //t.text = "a" ;
+        
     }
     
   public void resetColor() {
