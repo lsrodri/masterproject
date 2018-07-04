@@ -7,27 +7,32 @@ public class ControllerManager : MonoBehaviour {
 
     private SteamVR_TrackedObject trackedObject;
     private SteamVR_Controller.Device device;
-    public int userResponse = 50;
+    static int userResponse = 50;
     public Text outputUserResponse;
+    double tempUserResponse = userResponse;
 
     void Start()
     {
         trackedObject = GetComponent<SteamVR_TrackedObject>();
+        PlayerPrefs.SetInt("userResponse", 50);
+        userResponse = PlayerPrefs.GetInt("userResponse");
     }
     void Update()
     {
         device = SteamVR_Controller.Input((int)trackedObject.index);
         float controllerValue = device.GetAxis().y;
-        if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad) && controllerValue != 0)
+        if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
             if (controllerValue > 0 && userResponse < 100)
             {
-                userResponse++;
+                tempUserResponse+= 0.1;
             } else if (controllerValue < 0 && userResponse > 0)
             {
-                userResponse--;
+                tempUserResponse -= 0.1;
             }
+            userResponse = (int)System.Math.Round(tempUserResponse, System.MidpointRounding.AwayFromZero);
             outputUserResponse.text = userResponse.ToString() + "%";
+            PlayerPrefs.SetInt("userResponse", userResponse);
         }
     }
 }
