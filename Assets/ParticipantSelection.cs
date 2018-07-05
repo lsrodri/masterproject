@@ -6,25 +6,23 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.VR;
 
-public class ParticipantSelection : MonoBehaviour {
+public class ParticipantSelection : MonoBehaviour
+{
 
     public InputField participantInput;
-    private int participantNumber = 0;
-
-	// Use this for initialization
-	void Start () {
-       //VRSettings.enabled = false;
-    }
+    private string participantNumber = "1";
 
     public void loadExperiment()
     {
-        if (int.TryParse(participantInput.text, out participantNumber))
+        if (participantInput.text != "")
         {
-            PlayerPrefs.SetInt("participant", participantNumber);
-            //Application.LoadLevel(1);
+            participantNumber = participantInput.text;
+            PlayerPrefs.SetString("participant", participantNumber);
             UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-        } else {
-            Debug.Log("Entered participant must be an integer.");
+        }
+        else
+        {
+            Debug.Log("Empty participant field");
         }
     }
 

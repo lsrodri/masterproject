@@ -7,13 +7,13 @@ using UnityEzExp;
 public class RunExperiment : MonoBehaviour
 {
 
-    //  string[] columnsResult = new string[] { "Arousal", "Valence", "Confidence", "Emotion1", "Emotion2" };
-
     Experiment _experiment;
 
     [Space]
     [Header("Experience")]
-    public string currentUserId = "1";
+
+    //Initializing as 0 for direct scene testing as this variable is set at the index scene
+    private string currentUserId = "0";
     public int currentTrialIndex = -1;
 
     public string inputDataPath;
@@ -23,7 +23,7 @@ public class RunExperiment : MonoBehaviour
 
     void Start()
     {
-
+        currentUserId = PlayerPrefs.GetString("participant");
     }
  
 
