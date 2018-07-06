@@ -7,20 +7,26 @@ using UnityEzExp;
 public class ControllerManager : MonoBehaviour {
 
     Experiment _experiment;
+   
+    static int userResponse = 50;
+    
+    double tempUserResponse = userResponse;
+
+    public int currentTrialIndex = -1;
+    public string inputDataPath;
+    public string outputDataPath;
+    public Text outputUserResponse;
+    public GameObject preExperimentCanvas;
+    public GameObject leftStimulus;
+    public GameObject rightStimulus;
+    public Sprite lenghtSprite;
+    public Sprite areaSprite;
 
     //Initializing as 0 for direct scene testing as this variable is set at the index scene
     private string currentUserId = "1";
-    public int currentTrialIndex = -1;
-
-    public string inputDataPath;
-    public string outputDataPath;
-
+    private SpriteRenderer spriteRenderer;
     private SteamVR_TrackedObject trackedObject;
     private SteamVR_Controller.Device device;
-    static int userResponse = 50;
-    public Text outputUserResponse;
-    double tempUserResponse = userResponse;
-    public GameObject preExperimentCanvas;
 
     RunExperiment _runExperiment;
 
@@ -87,17 +93,38 @@ public class ControllerManager : MonoBehaviour {
             return; //info temporary
         }
 
+        // We read the value of the CSV : 
+        float ratio = float.Parse(_experiment.GetParameterData("Ratio"));
+        string property = _experiment.GetParameterData("Property");
+        float propertySize;
+
         _experiment.StartTrial();
         currentTrialIndex = _experiment.GetCurrentTrialIndex();
 
         Debug.Log("<color=#E91E63>Current trial : " + currentTrialIndex + "</color>");
 
-        // We read the value of the CSV : 
-        int color = int.Parse(_experiment.GetParameterData("Color"));
-        string shape = _experiment.GetParameterData("Shape");
+        
 
-        // Here you start your trial based on what you get :
-        Debug.Log("Loading the shape " + shape + " with the color id " + color);
+        if (property == "Length")
+        {
+            // Scale used by this property to fit the paper and make the right positioning possible
+            propertySize = 0.5f;
+
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = lenghtSprite;
+
+            leftStimulus.transform.localScale = new Vector3(propertySize, propertySize, propertySize);
+            leftStimulus.transform.position = new Vector3(0.048f, 0.012f, 0.063f);
+
+            rightStimulus.transform.localScale = new Vector3(propertySize, propertySize * ratio, propertySize);
+            rightStimulus.transform.position = new Vector3(-0.164f, 0.012f, 0.043f);
+
+        } else if (property == "Area")
+        {
+            rightStimulus.transform.localScale = new Vector3(ratio, ratio, ratio);
+        }
+        
+
     }
 
     public void TrialEnded()
