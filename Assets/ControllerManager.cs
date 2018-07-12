@@ -16,13 +16,16 @@ public class ControllerManager : MonoBehaviour {
     public string inputDataPath;
     public string outputDataPath;
     public Text outputUserResponse;
+    public Text outputConfirmation;
     public GameObject preExperimentCanvas;
     public GameObject confirmationCanvas;
     public GameObject invalidInputCanvas;
     public GameObject leftStimulus;
     public GameObject rightStimulus;
+    public GameObject horizontalBar;
     public Sprite lenghtSprite;
     public Sprite areaSprite;
+    public Sprite barSprite;
 
     //Initializing as 0 for direct scene testing as this variable is set at the index scene
     private string currentUserId = "1";
@@ -82,6 +85,7 @@ public class ControllerManager : MonoBehaviour {
             
             userResponse = (int)System.Math.Round(tempUserResponse, System.MidpointRounding.AwayFromZero);
             outputUserResponse.text = userResponse.ToString() + "%";
+            outputConfirmation.text = userResponse.ToString() + "%";
             PlayerPrefs.SetInt("userResponse", userResponse);
         }
         else if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
@@ -143,6 +147,8 @@ public class ControllerManager : MonoBehaviour {
         float ratio = float.Parse(_experiment.GetParameterData("Ratio"));
         string property = _experiment.GetParameterData("Property");
         float propertySize;
+        float calculatedSize;
+        float rightBarZ;
 
         _experiment.StartTrial();
         currentTrialIndex = _experiment.GetCurrentTrialIndex();
@@ -156,6 +162,7 @@ public class ControllerManager : MonoBehaviour {
         confirmationCanvas.SetActive(false);
         userHasEstimated = false;
         outputUserResponse.text = "";
+        outputConfirmation.text = "";
         userResponse = 50;
         PlayerPrefs.SetInt("userResponse", userResponse);
         tempUserResponse = userResponse;
@@ -164,29 +171,54 @@ public class ControllerManager : MonoBehaviour {
         {
             // Scale used by this property to fit the paper and make the right positioning possible
             propertySize = 0.5f;
+            calculatedSize = propertySize * ratio;
 
-            
             leftSpriteRenderer.sprite = lenghtSprite;
             leftStimulus.transform.localScale = new Vector3(propertySize, propertySize, propertySize);
             leftStimulus.transform.localPosition = new Vector3(0.048f, 0.012f, 0.063f);
                         
             rightSpriteRenderer.sprite = lenghtSprite;
-            rightStimulus.transform.localScale = new Vector3(propertySize, propertySize * ratio, propertySize);
+            rightStimulus.transform.localScale = new Vector3(propertySize, calculatedSize, propertySize);
             rightStimulus.transform.localPosition = new Vector3(-0.164f, 0.012f, 0.043f);
+
+            horizontalBar.SetActive(false);
 
         } else if (property == "Area")
         {
             propertySize = 0.2f;
+            calculatedSize = propertySize * ratio;
 
             leftSpriteRenderer.sprite = areaSprite;
             leftStimulus.transform.localScale = new Vector3(propertySize, propertySize, propertySize);
             leftStimulus.transform.localPosition = new Vector3(0.061f, 0.012f, 0.063f);
         
             rightSpriteRenderer.sprite = areaSprite;
-            rightStimulus.transform.localScale = new Vector3(propertySize * ratio, propertySize * ratio, propertySize * ratio);
+            rightStimulus.transform.localScale = new Vector3(calculatedSize, calculatedSize, calculatedSize);
             rightStimulus.transform.localPosition = new Vector3(-0.164f, 0.012f, 0.033f);
+
+            horizontalBar.SetActive(false);
+
+        } else if (property == "BarChart")
+        {
+            propertySize = 0.4f;
+            calculatedSize = propertySize * ratio;
+
+            leftSpriteRenderer.sprite = barSprite;
+            leftStimulus.transform.localScale = new Vector3(propertySize, propertySize, propertySize);
+            leftStimulus.transform.localPosition = new Vector3(-0.113f, 0.012f, 0.063f);
+
+            rightSpriteRenderer.sprite = barSprite;
+            rightStimulus.transform.localScale = new Vector3(propertySize, calculatedSize, propertySize);
+
+            // Calculating the right bar position to align bars to the bottom
+            rightBarZ = (System.Math.Abs(propertySize - calculatedSize) / 2) + 0.063f;
+
+            rightStimulus.transform.localPosition = new Vector3(-0.257f, 0.012f, rightBarZ);
+
+            horizontalBar.SetActive(true);
         }
-        
+
+
 
     }
 
