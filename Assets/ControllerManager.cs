@@ -190,11 +190,11 @@ public class ControllerManager : MonoBehaviour {
 
             leftSpriteRenderer.sprite = areaSprite;
             leftStimulus.transform.localScale = new Vector3(propertySize, propertySize, propertySize);
-            leftStimulus.transform.localPosition = new Vector3(0.061f, 0.012f, 0.063f);
+            leftStimulus.transform.localPosition = new Vector3(0.045f, 0.012f, 0.063f);
         
             rightSpriteRenderer.sprite = areaSprite;
             rightStimulus.transform.localScale = new Vector3(calculatedSize, calculatedSize, calculatedSize);
-            rightStimulus.transform.localPosition = new Vector3(-0.164f, 0.012f, 0.033f);
+            rightStimulus.transform.localPosition = new Vector3(-0.16f, 0.012f, 0.033f);
 
             horizontalBar.SetActive(false);
 
