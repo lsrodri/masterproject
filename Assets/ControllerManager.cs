@@ -34,6 +34,8 @@ public class ControllerManager : MonoBehaviour {
     private SteamVR_TrackedObject trackedObject;
     private SteamVR_Controller.Device device;
     private bool userHasEstimated = false;
+    private float tempTime;
+    private float trialTime;
 
     RunExperiment _runExperiment;
 
@@ -121,13 +123,16 @@ public class ControllerManager : MonoBehaviour {
         _experiment.SetOutputFilePath(outputFilePath);
 
         // This is the results you want 
-        _experiment.SetResultsHeader(new string[] { "speed", "accuracy" });
+        _experiment.SetResultsHeader(new string[] { "Subject","Trial","Ratio","Property","Answer","CompletionTime"});
 
         Debug.Log("Output path : <color=#E91E63>" + outputFilePath + "</color>");
 
         Debug.Log("<color=#E91E63>Current userId : " + currentUserId + "</color>");
 
+        tempTime = Time.time;
+
         NextTrial();
+
     }
 
     public void NextTrial()
@@ -218,7 +223,17 @@ public class ControllerManager : MonoBehaviour {
             horizontalBar.SetActive(true);
         }
 
+        trialTime = Time.time - tempTime;
+        tempTime = Time.time;
 
+        SetResults(
+            currentUserId,
+            currentTrialIndex,
+            ratio,
+            property,
+            PlayerPrefs.GetInt("userResponse"),
+            trialTime
+        );
 
     }
 
@@ -228,11 +243,17 @@ public class ControllerManager : MonoBehaviour {
     }
 
 
-    public void SetResults(int speed, float accuracy)
+    public void SetResults(string currentUserId, int currentTrialIndex, float ratio, string property, int userResponse, float CompletionTime)
     {
         // The result data correspond to _experiment.SetResultsHeader
-        _experiment.SetResultData("speed", speed.ToString());
-        _experiment.SetResultData("accuracy", accuracy.ToString());
+        // Subject,Trial,Ratio,Property,Answer,CompletionTime
+
+        _experiment.SetResultData("Subject", currentUserId);
+        _experiment.SetResultData("Trial", currentTrialIndex.ToString());
+        _experiment.SetResultData("Ratio", ratio.ToString());
+        _experiment.SetResultData("Property", property);
+        _experiment.SetResultData("Answer", userResponse.ToString());
+        _experiment.SetResultData("CompletionTime", CompletionTime.ToString());     
         Debug.Log("Setting the results");
         _experiment.EndTrial();
     }
@@ -241,13 +262,13 @@ public class ControllerManager : MonoBehaviour {
     {
         Debug.Log("The experience is finished");
         // Calling another scene to avoid further interaction and give user a message
-        UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
 
     public void RandomResults()
     {
-        SetResults((int)Random.Range(0, 100), Random.Range(0, 1));
+        //SetResults((int)Random.Range(0, 100), Random.Range(0, 1));
     }
 
     public void ApplicationStop() { }
