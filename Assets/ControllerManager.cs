@@ -98,6 +98,7 @@ public class ControllerManager : MonoBehaviour {
                 StartExperiment(currentUserId, 0, 0, false);
                 preExperimentCanvas.SetActive(false);
             }
+            // Checking if user has estimated a value before showing the confirmation canvas
             else if (userHasEstimated == true)
             {
                 if (currentTrialIndex != -1 && !confirmationCanvas.activeSelf)
@@ -106,6 +107,7 @@ public class ControllerManager : MonoBehaviour {
                 }
                 else if (currentTrialIndex != -1 && confirmationCanvas.activeSelf)
                 {
+                    trialTime = Time.time - tempTime;
                     NextTrial();
                 }
             } else if (userHasEstimated == false)
@@ -118,12 +120,12 @@ public class ControllerManager : MonoBehaviour {
     public void StartExperiment(string userID, int trialID, int startWith, bool skipTraining, bool forceAvatar = false)
     {
 
-        _experiment = new Experiment(inputDataPath, userID, trialID, "Subject");
+        _experiment = new Experiment(inputDataPath, userID, trialID, "Participant");
         string outputFilePath = outputDataPath + userID + "-results.csv";
         _experiment.SetOutputFilePath(outputFilePath);
 
         // This is the results you want 
-        _experiment.SetResultsHeader(new string[] { "Subject","Trial","Ratio","Property","Answer","CompletionTime"});
+        _experiment.SetResultsHeader(new string[] { "Participant","Trial","Ratio","Property","Answer","CompletionTime"});
 
         Debug.Log("Output path : <color=#E91E63>" + outputFilePath + "</color>");
 
@@ -152,11 +154,25 @@ public class ControllerManager : MonoBehaviour {
         float ratio = float.Parse(_experiment.GetParameterData("Ratio"));
         string property = _experiment.GetParameterData("Property");
         float propertySize;
-        float calculatedSize;
+        float calculatedRightSize;
         float rightBarZ;
+        float leftStimuliVariation;
+        float calculatedLeftSize;
 
         _experiment.StartTrial();
         currentTrialIndex = _experiment.GetCurrentTrialIndex();
+
+        //trialTime = Time.time - tempTime;
+        tempTime = Time.time;
+
+        SetResults(
+            currentUserId,
+            currentTrialIndex,
+            ratio,
+            property,
+            PlayerPrefs.GetInt("userResponse"),
+            trialTime
+        );
 
         Debug.Log("<color=#E91E63>Current trial : " + currentTrialIndex + "</color>");
 
@@ -172,18 +188,21 @@ public class ControllerManager : MonoBehaviour {
         PlayerPrefs.SetInt("userResponse", userResponse);
         tempUserResponse = userResponse;
 
+        leftStimuliVariation = ((int)Random.Range(95, 105) * 0.01f);
+
         if (property == "Length")
         {
             // Scale used by this property to fit the paper and make the right positioning possible
             propertySize = 0.5f;
-            calculatedSize = propertySize * ratio;
+            calculatedLeftSize = propertySize * leftStimuliVariation;
+            calculatedRightSize = calculatedLeftSize * ratio;
 
             leftSpriteRenderer.sprite = lenghtSprite;
-            leftStimulus.transform.localScale = new Vector3(propertySize, propertySize, propertySize);
+            leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
             leftStimulus.transform.localPosition = new Vector3(0.048f, 0.012f, 0.063f);
                         
             rightSpriteRenderer.sprite = lenghtSprite;
-            rightStimulus.transform.localScale = new Vector3(propertySize, calculatedSize, propertySize);
+            rightStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedRightSize, calculatedLeftSize);
             rightStimulus.transform.localPosition = new Vector3(-0.164f, 0.012f, 0.043f);
 
             horizontalBar.SetActive(false);
@@ -191,14 +210,15 @@ public class ControllerManager : MonoBehaviour {
         } else if (property == "Area")
         {
             propertySize = 0.2f;
-            calculatedSize = propertySize * ratio;
+            calculatedLeftSize = propertySize * leftStimuliVariation;
+            calculatedRightSize = calculatedLeftSize * ratio;
 
             leftSpriteRenderer.sprite = areaSprite;
-            leftStimulus.transform.localScale = new Vector3(propertySize, propertySize, propertySize);
+            leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
             leftStimulus.transform.localPosition = new Vector3(0.045f, 0.012f, 0.063f);
         
             rightSpriteRenderer.sprite = areaSprite;
-            rightStimulus.transform.localScale = new Vector3(calculatedSize, calculatedSize, calculatedSize);
+            rightStimulus.transform.localScale = new Vector3(calculatedRightSize, calculatedRightSize, calculatedRightSize);
             rightStimulus.transform.localPosition = new Vector3(-0.16f, 0.012f, 0.033f);
 
             horizontalBar.SetActive(false);
@@ -206,34 +226,29 @@ public class ControllerManager : MonoBehaviour {
         } else if (property == "BarChart")
         {
             propertySize = 0.4f;
-            calculatedSize = propertySize * ratio;
+            calculatedLeftSize = propertySize * leftStimuliVariation;
+            calculatedRightSize = calculatedLeftSize * ratio;
 
             leftSpriteRenderer.sprite = barSprite;
-            leftStimulus.transform.localScale = new Vector3(propertySize, propertySize, propertySize);
-            leftStimulus.transform.localPosition = new Vector3(-0.113f, 0.012f, 0.063f);
+            leftStimulus.transform.localScale = new Vector3(propertySize, calculatedLeftSize, propertySize);
+            leftStimulus.transform.localPosition = new Vector3(-0.113f, 0.012f, 0.26f);
 
             rightSpriteRenderer.sprite = barSprite;
-            rightStimulus.transform.localScale = new Vector3(propertySize, calculatedSize, propertySize);
+            rightStimulus.transform.localScale = new Vector3(propertySize, calculatedRightSize, propertySize);
 
             // Calculating the right bar position to align bars to the bottom
-            rightBarZ = (System.Math.Abs(propertySize - calculatedSize) / 2) + 0.063f;
+            rightBarZ = (System.Math.Abs(calculatedLeftSize - calculatedRightSize) / 2) + 0.063f;
 
-            rightStimulus.transform.localPosition = new Vector3(-0.257f, 0.012f, rightBarZ);
+            rightStimulus.transform.localPosition = new Vector3(-0.257f, 0.012f, 0.26f);
 
             horizontalBar.SetActive(true);
         }
 
-        trialTime = Time.time - tempTime;
-        tempTime = Time.time;
+        
 
-        SetResults(
-            currentUserId,
-            currentTrialIndex,
-            ratio,
-            property,
-            PlayerPrefs.GetInt("userResponse"),
-            trialTime
-        );
+        Debug.Log(leftStimuliVariation.ToString());
+
+        
 
     }
 
@@ -243,16 +258,16 @@ public class ControllerManager : MonoBehaviour {
     }
 
 
-    public void SetResults(string currentUserId, int currentTrialIndex, float ratio, string property, int userResponse, float CompletionTime)
+    public void SetResults(string currentUserId, int currentTrialIndex, float ratio, string property, int response, float CompletionTime)
     {
         // The result data correspond to _experiment.SetResultsHeader
-        // Subject,Trial,Ratio,Property,Answer,CompletionTime
+        // Participant,Trial,Ratio,Property,Answer,CompletionTime
 
-        _experiment.SetResultData("Subject", currentUserId);
+        _experiment.SetResultData("Participant", currentUserId);
         _experiment.SetResultData("Trial", currentTrialIndex.ToString());
         _experiment.SetResultData("Ratio", ratio.ToString());
         _experiment.SetResultData("Property", property);
-        _experiment.SetResultData("Answer", userResponse.ToString());
+        _experiment.SetResultData("Answer", response.ToString());
         _experiment.SetResultData("CompletionTime", CompletionTime.ToString());     
         Debug.Log("Setting the results");
         _experiment.EndTrial();
