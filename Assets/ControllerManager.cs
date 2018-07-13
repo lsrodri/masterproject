@@ -36,6 +36,9 @@ public class ControllerManager : MonoBehaviour {
     private bool userHasEstimated = false;
     private float tempTime;
     private float trialTime;
+    private float leftStimuliVariation;
+    private float size1;
+    private float size1Output;
 
     RunExperiment _runExperiment;
 
@@ -108,6 +111,13 @@ public class ControllerManager : MonoBehaviour {
                 else if (currentTrialIndex != -1 && confirmationCanvas.activeSelf)
                 {
                     trialTime = Time.time - tempTime;
+                    
+
+                    SetResults(
+                        PlayerPrefs.GetInt("userResponse"),
+                        trialTime,
+                        size1Output
+                    );
                     NextTrial();
                 }
             } else if (userHasEstimated == false)
@@ -125,7 +135,8 @@ public class ControllerManager : MonoBehaviour {
         _experiment.SetOutputFilePath(outputFilePath);
 
         // This is the results you want 
-        _experiment.SetResultsHeader(new string[] { "Participant","Trial","Ratio","Property","Answer","CompletionTime"});
+        //_experiment.SetResultsHeader(new string[] { "Participant","Trial","Ratio","Property","Answer","CompletionTime", "size1Output" });
+        _experiment.SetResultsHeader(new string[] { "Answer", "CompletionTime", "size1Output" });
 
         Debug.Log("Output path : <color=#E91E63>" + outputFilePath + "</color>");
 
@@ -150,14 +161,17 @@ public class ControllerManager : MonoBehaviour {
             return; //info temporary
         }
 
-        // We read the value of the CSV : 
+        // REading values from the CSV : 
         float ratio = float.Parse(_experiment.GetParameterData("Ratio"));
         string property = _experiment.GetParameterData("Property");
+        size1 = float.Parse(_experiment.GetParameterData("Size1"));
         float propertySize;
         float calculatedRightSize;
         float rightBarZ;
-        float leftStimuliVariation;
+
+        
         float calculatedLeftSize;
+        
 
         _experiment.StartTrial();
         currentTrialIndex = _experiment.GetCurrentTrialIndex();
@@ -165,14 +179,8 @@ public class ControllerManager : MonoBehaviour {
         //trialTime = Time.time - tempTime;
         tempTime = Time.time;
 
-        SetResults(
-            currentUserId,
-            currentTrialIndex,
-            ratio,
-            property,
-            PlayerPrefs.GetInt("userResponse"),
-            trialTime
-        );
+        leftStimuliVariation = ((int)Random.Range(95, 105) * 0.01f);
+        size1Output = leftStimuliVariation * size1;
 
         Debug.Log("<color=#E91E63>Current trial : " + currentTrialIndex + "</color>");
 
@@ -188,13 +196,14 @@ public class ControllerManager : MonoBehaviour {
         PlayerPrefs.SetInt("userResponse", userResponse);
         tempUserResponse = userResponse;
 
-        leftStimuliVariation = ((int)Random.Range(95, 105) * 0.01f);
+        
 
         if (property == "Length")
         {
             // Scale used by this property to fit the paper and make the right positioning possible
             propertySize = 0.5f;
-            calculatedLeftSize = propertySize * leftStimuliVariation;
+
+            calculatedLeftSize = propertySize * size1Output;
             calculatedRightSize = calculatedLeftSize * ratio;
 
             leftSpriteRenderer.sprite = lenghtSprite;
@@ -210,7 +219,7 @@ public class ControllerManager : MonoBehaviour {
         } else if (property == "Area")
         {
             propertySize = 0.2f;
-            calculatedLeftSize = propertySize * leftStimuliVariation;
+            calculatedLeftSize = propertySize * size1Output;
             calculatedRightSize = calculatedLeftSize * ratio;
 
             leftSpriteRenderer.sprite = areaSprite;
@@ -226,7 +235,7 @@ public class ControllerManager : MonoBehaviour {
         } else if (property == "BarChart")
         {
             propertySize = 0.4f;
-            calculatedLeftSize = propertySize * leftStimuliVariation;
+            calculatedLeftSize = propertySize * size1Output;
             calculatedRightSize = calculatedLeftSize * ratio;
 
             leftSpriteRenderer.sprite = barSprite;
@@ -246,7 +255,7 @@ public class ControllerManager : MonoBehaviour {
 
         
 
-        Debug.Log(leftStimuliVariation.ToString());
+        Debug.Log("size1Output" + size1Output.ToString());
 
         
 
@@ -258,17 +267,19 @@ public class ControllerManager : MonoBehaviour {
     }
 
 
-    public void SetResults(string currentUserId, int currentTrialIndex, float ratio, string property, int response, float CompletionTime)
+    public void SetResults(int response, float CompletionTime, float size1Output)
     {
         // The result data correspond to _experiment.SetResultsHeader
         // Participant,Trial,Ratio,Property,Answer,CompletionTime
 
-        _experiment.SetResultData("Participant", currentUserId);
+        /*_experiment.SetResultData("Participant", currentUserId);
         _experiment.SetResultData("Trial", currentTrialIndex.ToString());
         _experiment.SetResultData("Ratio", ratio.ToString());
-        _experiment.SetResultData("Property", property);
+        _experiment.SetResultData("Property", property);*/
         _experiment.SetResultData("Answer", response.ToString());
-        _experiment.SetResultData("CompletionTime", CompletionTime.ToString());     
+        _experiment.SetResultData("CompletionTime", CompletionTime.ToString());
+        _experiment.SetResultData("size1Output", size1Output.ToString());
+
         Debug.Log("Setting the results");
         _experiment.EndTrial();
     }
