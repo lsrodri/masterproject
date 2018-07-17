@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -39,6 +40,7 @@ public class ControllerManager : MonoBehaviour {
     private float leftStimuliVariation;
     private float size1;
     private float size1Output;
+    private bool invertingBoolean = true;
 
     RunExperiment _runExperiment;
 
@@ -168,10 +170,10 @@ public class ControllerManager : MonoBehaviour {
         float propertySize;
         float calculatedRightSize;
         float rightBarZ;
-
-        
+        float widthAdjusted;
         float calculatedLeftSize;
-        
+        //float[] stimulusZPos = new float[2];
+        int invertedBoolInt;
 
         _experiment.StartTrial();
         currentTrialIndex = _experiment.GetCurrentTrialIndex();
@@ -179,10 +181,10 @@ public class ControllerManager : MonoBehaviour {
         //trialTime = Time.time - tempTime;
         tempTime = Time.time;
 
-        leftStimuliVariation = ((int)Random.Range(95, 105) * 0.01f);
+        leftStimuliVariation = ((int)UnityEngine.Random.Range(95, 105) * 0.01f);
         size1Output = leftStimuliVariation * size1;
 
-        Debug.Log("<color=#E91E63>Current trial : " + currentTrialIndex + "</color>");
+        Debug.Log(currentTrialIndex);
 
         leftSpriteRenderer = leftStimulus.GetComponent<SpriteRenderer>();
         rightSpriteRenderer = rightStimulus.GetComponent<SpriteRenderer>();
@@ -196,23 +198,47 @@ public class ControllerManager : MonoBehaviour {
         PlayerPrefs.SetInt("userResponse", userResponse);
         tempUserResponse = userResponse;
 
-        
+        // Inverting the order from last trial and then converting it to integer to access array
+        invertingBoolean = !invertingBoolean;
+        invertedBoolInt = invertingBoolean ? 1 : 0;
 
         if (property == "Length")
         {
             // Scale used by this property to fit the paper and make the right positioning possible
-            propertySize = 0.5f;
+            propertySize = 0.4f;
 
+            widthAdjusted = propertySize * 1.2f;
             calculatedLeftSize = propertySize * size1Output;
             calculatedRightSize = calculatedLeftSize * ratio;
 
+            float[] stimulusZPos = { -0.095f, -0.20f };
+
             leftSpriteRenderer.sprite = lenghtSprite;
-            leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
-            leftStimulus.transform.localPosition = new Vector3(0.048f, 0.012f, 0.063f);
-                        
+            leftStimulus.transform.localScale = new Vector3(widthAdjusted, calculatedLeftSize, widthAdjusted);
+            leftStimulus.transform.localPosition = new Vector3(0.048f, 0.012f, stimulusZPos[invertedBoolInt]);
+
+            // Inverting the boolean above to position right stimulus differently from its left counterpart
+            int invertedInt = System.Math.Abs(1 - invertedBoolInt);
+            float rightStimulusZ = stimulusZPos[invertedInt];
+
+            /* Checking if position needs to be randomized in case the bottom of the right stimulus
+             * is within .01f of the bottom of the left stimulus
+             * loop will run until the right stimulus gets out of that range
+             * which will happen by changing the z position of the right stimulus
+            */
+            float rightStimulusZBottom = rightStimulusZ + calculatedRightSize;
+            float leftStimulusZ = calculatedLeftSize + stimulusZPos[invertedBoolInt];
+            while (rightStimulusZBottom >= (leftStimulusZ - 0.02f)
+                    && rightStimulusZBottom <= (leftStimulusZ + 0.02f))
+            {
+                rightStimulusZ = UnityEngine.Random.Range(stimulusZPos[invertedInt], stimulusZPos[invertedBoolInt]);
+                rightStimulusZBottom = rightStimulusZ + calculatedRightSize;
+                Debug.Log("z position randomized");
+            }
+
             rightSpriteRenderer.sprite = lenghtSprite;
-            rightStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedRightSize, calculatedLeftSize);
-            rightStimulus.transform.localPosition = new Vector3(-0.164f, 0.012f, 0.043f);
+            rightStimulus.transform.localScale = new Vector3(widthAdjusted, calculatedRightSize, widthAdjusted);
+            rightStimulus.transform.localPosition = new Vector3(-0.164f, 0.012f, rightStimulusZ);
 
             horizontalBar.SetActive(false);
 
@@ -228,7 +254,7 @@ public class ControllerManager : MonoBehaviour {
         
             rightSpriteRenderer.sprite = areaSprite;
             rightStimulus.transform.localScale = new Vector3(calculatedRightSize, calculatedRightSize, calculatedRightSize);
-            rightStimulus.transform.localPosition = new Vector3(-0.16f, 0.012f, 0.033f);
+            rightStimulus.transform.localPosition = new Vector3(-0.16f, 0.012f, -0.193f);
 
             horizontalBar.SetActive(false);
 
@@ -251,13 +277,7 @@ public class ControllerManager : MonoBehaviour {
             rightStimulus.transform.localPosition = new Vector3(-0.257f, 0.012f, 0.26f);
 
             horizontalBar.SetActive(true);
-        }
-
-        
-
-        Debug.Log("size1Output" + size1Output.ToString());
-
-        
+        }     
 
     }
 
@@ -280,7 +300,6 @@ public class ControllerManager : MonoBehaviour {
         _experiment.SetResultData("CompletionTime", CompletionTime.ToString());
         _experiment.SetResultData("size1Output", size1Output.ToString());
 
-        Debug.Log("Setting the results");
         _experiment.EndTrial();
     }
 
