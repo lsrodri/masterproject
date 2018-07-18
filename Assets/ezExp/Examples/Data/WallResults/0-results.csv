@@ -1,0 +1,5 @@
+Participant,Practice,Block,Trial,Property,Ratio,Position,Orientation,Answer,CompletionTime,ParticipantAngle,TaskCompletionTime
+0,false,1,0,BarChart,0.48,105,vertical,42,91.90454,103.2755,91904.55
+0,false,1,1,BarChart,0.28,105,horizontal,20,28.80721,103.2463,28807.2
+0,false,2,0,Area,0.88,165,horizontal,91,62.17136,163.1731,62171.36
+0,false,2,1,Area,0.88,105,horizontal,83,42.71333,103.4349,42713.34
