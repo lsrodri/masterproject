@@ -212,29 +212,17 @@ public class ControllerManager : MonoBehaviour {
             calculatedRightSize = calculatedLeftSize * ratio;
 
             float[] stimulusZPos = { -0.095f, -0.20f };
-
-            leftSpriteRenderer.sprite = lenghtSprite;
-            leftStimulus.transform.localScale = new Vector3(widthAdjusted, calculatedLeftSize, widthAdjusted);
-            leftStimulus.transform.localPosition = new Vector3(0.048f, 0.012f, stimulusZPos[invertedBoolInt]);
-
+            float leftStimulusZ = stimulusZPos[invertedBoolInt];
+            
             // Inverting the boolean above to position right stimulus differently from its left counterpart
             int invertedInt = System.Math.Abs(1 - invertedBoolInt);
             float rightStimulusZ = stimulusZPos[invertedInt];
 
-            /* Checking if position needs to be randomized in case the bottom of the right stimulus
-             * is within .01f of the bottom of the left stimulus
-             * loop will run until the right stimulus gets out of that range
-             * which will happen by changing the z position of the right stimulus
-            */
-            float rightStimulusZBottom = rightStimulusZ + calculatedRightSize;
-            float leftStimulusZ = calculatedLeftSize + stimulusZPos[invertedBoolInt];
-            while (rightStimulusZBottom >= (leftStimulusZ - 0.02f)
-                    && rightStimulusZBottom <= (leftStimulusZ + 0.02f))
-            {
-                rightStimulusZ = UnityEngine.Random.Range(stimulusZPos[invertedInt], stimulusZPos[invertedBoolInt]);
-                rightStimulusZBottom = rightStimulusZ + calculatedRightSize;
-                Debug.Log("z position randomized");
-            }
+            leftSpriteRenderer.sprite = lenghtSprite;
+            leftStimulus.transform.localScale = new Vector3(widthAdjusted, calculatedLeftSize, widthAdjusted);
+            leftStimulus.transform.localPosition = new Vector3(0.048f, 0.012f, leftStimulusZ);
+                      
+            rightStimulusZ = RandomUnalignedZPos(leftStimulusZ, rightStimulusZ, calculatedLeftSize, calculatedRightSize);
 
             rightSpriteRenderer.sprite = lenghtSprite;
             rightStimulus.transform.localScale = new Vector3(widthAdjusted, calculatedRightSize, widthAdjusted);
@@ -248,13 +236,22 @@ public class ControllerManager : MonoBehaviour {
             calculatedLeftSize = propertySize * size1Output;
             calculatedRightSize = calculatedLeftSize * ratio;
 
+            float[] stimulusZPos = { 0.063f, -0.193f };
+            float leftStimulusZ = stimulusZPos[invertedBoolInt];
+
+            // Inverting the boolean above to position right stimulus differently from its left counterpart
+            int invertedInt = System.Math.Abs(1 - invertedBoolInt);
+            float rightStimulusZ = stimulusZPos[invertedInt];
+
             leftSpriteRenderer.sprite = areaSprite;
             leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
-            leftStimulus.transform.localPosition = new Vector3(0.045f, 0.012f, 0.063f);
-        
+            leftStimulus.transform.localPosition = new Vector3(0.045f, 0.012f, leftStimulusZ);
+
+            rightStimulusZ = RandomUnalignedZPos(leftStimulusZ, rightStimulusZ, calculatedLeftSize, calculatedRightSize);
+
             rightSpriteRenderer.sprite = areaSprite;
             rightStimulus.transform.localScale = new Vector3(calculatedRightSize, calculatedRightSize, calculatedRightSize);
-            rightStimulus.transform.localPosition = new Vector3(-0.16f, 0.012f, -0.193f);
+            rightStimulus.transform.localPosition = new Vector3(-0.16f, 0.012f, rightStimulusZ);
 
             horizontalBar.SetActive(false);
 
@@ -317,4 +314,25 @@ public class ControllerManager : MonoBehaviour {
     }
 
     public void ApplicationStop() { }
+
+    public float RandomUnalignedZPos(float leftStimulusZ, float rightStimulusZ, float calculatedLeftSize, float calculatedRightSize)
+    {
+        /* Checking if position needs to be randomized in case the bottom of the right stimulus
+             * is within .01f of the bottom of the left stimulus
+             * loop will run until the right stimulus gets out of that range
+             * which will happen by changing the z position of the right stimulus
+        */
+
+        float rightStimulusZBottom = rightStimulusZ + calculatedRightSize;
+        float leftStimulusZBottom = calculatedLeftSize + leftStimulusZ;
+        while (rightStimulusZBottom >= (leftStimulusZBottom - 0.02f)
+                && rightStimulusZBottom <= (leftStimulusZBottom + 0.02f))
+        {
+            rightStimulusZ = UnityEngine.Random.Range(rightStimulusZ, leftStimulusZ);
+            rightStimulusZBottom = rightStimulusZ + calculatedRightSize;
+            Debug.Log("z position randomized");
+        }
+
+        return rightStimulusZ;
+    }
 }
