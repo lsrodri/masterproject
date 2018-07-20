@@ -28,7 +28,6 @@ public class WallControllerManager : MonoBehaviour {
     public GameObject stimulusPaper;
     public GameObject cameraEye;
     public GameObject canvases;
-    //public GameObject verticalBar;
     public Sprite lenghtSprite;
     public Sprite areaSprite;
     public Sprite barSprite;
@@ -51,6 +50,7 @@ public class WallControllerManager : MonoBehaviour {
 
     void Start()
     {
+        
         trackedObject = GetComponent<SteamVR_TrackedObject>();
         PlayerPrefs.SetInt("userResponse", 50);
         userResponse = PlayerPrefs.GetInt("userResponse");
@@ -216,22 +216,43 @@ public class WallControllerManager : MonoBehaviour {
         switch (inputPosition)
         {
             case 165:
-                canvases.transform.position = new Vector3(-1.67f, 2.527f, -0.02f);
+                canvases.transform.position = new Vector3(-1.6804f, 2.527f, -0.02f);
                 canvases.transform.rotation = Quaternion.Euler(0, -90f, 0);
                 stimuliBundle.transform.position = new Vector3(-2.311f, 1.75f, 0.027f);
-                stimuliBundle.transform.rotation = Quaternion.Euler(90f, 90f, 0);
+                if (orientation == "Vertical")
+                {
+                    stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 90f, 0);
+                }
+                else
+                {
+                    stimuliBundle.transform.localRotation = Quaternion.Euler(180f, 0, -90f);
+                }
                 break;
             case 135:
-                canvases.transform.position = new Vector3(-1.67f, 2.527f, -1.64f);
+                canvases.transform.position = new Vector3(-1.6804f, 2.527f, -1.64f);
                 canvases.transform.rotation = Quaternion.Euler(0, -90f, 0);
                 stimuliBundle.transform.position = new Vector3(-2.311f, 1.75f, -1.662f);
-                stimuliBundle.transform.rotation = Quaternion.Euler(90f, 90f, 0);
+                if (orientation == "Vertical")
+                {
+                    stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 90f, 0);
+                }
+                else
+                {
+                    stimuliBundle.transform.localRotation = Quaternion.Euler(180f, 0, -90f);
+                }
                 break;
             case 105:
-                canvases.transform.position = new Vector3(-1.4f, 2.527f, -4.058f);
+                canvases.transform.position = new Vector3(-1.4f, 2.527f, -4.0624f);
                 canvases.transform.rotation = Quaternion.Euler(0, 180f, 0);
-                stimuliBundle.transform.position = new Vector3(-1.4f, 1.75f, -4.688f);
-                stimuliBundle.transform.rotation = Quaternion.Euler(90f, 0, 0);
+                stimuliBundle.transform.position = new Vector3(-1.4f, 1.75f, -4.6939f);
+                if (orientation == "Vertical")
+                {
+                    stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 0, 0);
+                }
+                else
+                {
+                    stimuliBundle.transform.localRotation = Quaternion.Euler(180f, -90f, -90f);
+                }
                 break;
             default:
                 Console.WriteLine("inputPosition not in switch case list");
@@ -272,32 +293,11 @@ public class WallControllerManager : MonoBehaviour {
 
             leftSpriteRenderer.sprite = barSprite;
             leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
+            horizontalBar.SetActive(true);
+            
+            leftStimulus.transform.localPosition = new Vector3(-0.113f, 0.012f, 0.26f);
+            rightStimulus.transform.localPosition = new Vector3(-0.257f, 0.012f, 0.26f);
 
-            /*if (orientation == "Vertical")
-            {
-                stimuliBundle.transform.rotation = Quaternion.Euler(90f, 0, 0);
-            } else
-            {
-                stimuliBundle.transform.rotation = Quaternion.Euler(180f, 90f, 90f);
-            }*/
-
-                //if (orientation == "Vertical")
-                //{
-                leftStimulus.transform.localPosition = new Vector3(-0.113f, 0.012f, 0.26f);
-                //leftStimulus.transform.rotation = Quaternion.Euler(90f, 180f, 0);
-                rightStimulus.transform.localPosition = new Vector3(-0.257f, 0.012f, 0.26f);
-                //rightStimulus.transform.rotation = Quaternion.Euler(90f, 180f, 0);
-                horizontalBar.SetActive(true);
-                //verticalBar.SetActive(false);
-            /*} else
-            {
-                leftStimulus.transform.localPosition = new Vector3(-0.113f, 0.012f, 0.26f);
-                leftStimulus.transform.rotation = Quaternion.Euler(90f, 90f, 0);
-                rightStimulus.transform.localPosition = new Vector3(-0.257f, 0.012f, 0.26f);
-                rightStimulus.transform.rotation = Quaternion.Euler(90f, 90f, 0);
-                verticalBar.SetActive(true);
-                horizontalBar.SetActive(false);
-            }*/
 
             rightSpriteRenderer.sprite = barSprite;
             rightStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedRightSize, calculatedLeftSize);

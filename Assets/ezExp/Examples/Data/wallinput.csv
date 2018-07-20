@@ -1,8 +1,10 @@
 Participant,Practice,Block,Trial,Property,Ratio,Position,Orientation
-0,false,1,0,BarChart,0.48,105,vertical
-0,false,1,1,BarChart,0.28,105,horizontal
-0,false,2,0,Area,0.88,165,horizontal
-0,false,2,1,Area,0.88,105,horizontal
+0,false,1,0,BarChart,0.48,105,horizontal
+0,false,1,1,BarChart,0.28,135,horizontal
+0,false,1,2,BarChart,0.88,165,horizontal
+0,false,2,0,Area,0.58,105,vertical
+0,false,2,1,Area,0.48,135,vertical
+0,false,2,2,Area,0.78,165,vertical
 1,false,1,0,Area,0.88,105,vertical
 1,false,1,1,Area,0.88,165,vertical
 1,false,1,2,Area,0.78,105,vertical
