@@ -1,7 +1,7 @@
 Participant,Practice,Block,Trial,Property,Ratio,Size1
-0,false,1,0,BarChart,0.73,0.6
-0,false,1,1,BarChart,0.08,0.6
-0,false,1,2,BarChart,0.28,0.6
+0,false,1,0,BarChart,0.73,1
+0,false,1,1,BarChart,0.08,1
+0,false,1,2,BarChart,0.28,1
 0,false,2,0,Length,0.88,1
 0,false,2,1,Length,0.48,1
 0,false,2,2,Length,0.63,1

@@ -41,6 +41,8 @@ public class ControllerManager : MonoBehaviour {
     private float size1;
     private float size1Output;
     private bool invertingBoolean = true;
+    private Vector3 headPosition;
+    private Quaternion headRotation;
 
     RunExperiment _runExperiment;
 
@@ -57,8 +59,15 @@ public class ControllerManager : MonoBehaviour {
         float controllerValue = device.GetAxis().y;
         if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
-            // Flag that user has entered a value for this trial
-            userHasEstimated = true;
+            // Only running this code for the first time the user presses an answer
+            if (userHasEstimated == false)
+            {
+                // Saving position and rotation of user's head by the time they start answering
+                headPosition = UnityEngine.VR.InputTracking.GetLocalPosition(UnityEngine.VR.VRNode.Head);
+                headRotation = UnityEngine.VR.InputTracking.GetLocalRotation(UnityEngine.VR.VRNode.Head);
+                // Flag that user has entered a value for this trial
+                userHasEstimated = true;
+            }
 
             /* If user presses the wheel while confirmation screen is open 
              * the application hides the confirmation screen
@@ -117,8 +126,9 @@ public class ControllerManager : MonoBehaviour {
 
                     SetResults(
                         PlayerPrefs.GetInt("userResponse"),
-                        trialTime,
-                        size1Output
+                        size1Output,
+                        headPosition.x + ";" + headPosition.y + ";" + headPosition.z,
+                        headRotation.x + ";" + headRotation.y + ";" + headRotation.z
                     );
                     NextTrial();
                 }
@@ -137,8 +147,8 @@ public class ControllerManager : MonoBehaviour {
         _experiment.SetOutputFilePath(outputFilePath);
 
         // This is the results you want 
-        //_experiment.SetResultsHeader(new string[] { "Participant","Trial","Ratio","Property","Answer","CompletionTime", "size1Output" });
-        _experiment.SetResultsHeader(new string[] { "Answer", "CompletionTime", "size1Output" });
+        //_experiment.SetResultsHeader(new string[] { "Participant","Trial","Ratio","Property","Answer", "size1Output" });
+        _experiment.SetResultsHeader(new string[] { "Answer", "size1Output", "headPosition", "headRotation" });
 
         Debug.Log("Output path : <color=#E91E63>" + outputFilePath + "</color>");
 
@@ -284,7 +294,7 @@ public class ControllerManager : MonoBehaviour {
     }
 
 
-    public void SetResults(int response, float CompletionTime, float size1Output)
+    public void SetResults(int response, float size1Output, string headPosition, string headRotation)
     {
         // The result data correspond to _experiment.SetResultsHeader
         // Participant,Trial,Ratio,Property,Answer,CompletionTime
@@ -294,8 +304,10 @@ public class ControllerManager : MonoBehaviour {
         _experiment.SetResultData("Ratio", ratio.ToString());
         _experiment.SetResultData("Property", property);*/
         _experiment.SetResultData("Answer", response.ToString());
-        _experiment.SetResultData("CompletionTime", CompletionTime.ToString());
         _experiment.SetResultData("size1Output", size1Output.ToString());
+        _experiment.SetResultData("headPosition", headPosition);
+        _experiment.SetResultData("headRotation", headRotation);
+
 
         _experiment.EndTrial();
     }
