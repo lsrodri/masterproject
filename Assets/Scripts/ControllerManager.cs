@@ -24,9 +24,12 @@ public class ControllerManager : MonoBehaviour {
     public GameObject leftStimulus;
     public GameObject rightStimulus;
     public GameObject horizontalBar;
+    public GameObject stimuliPaper;
+    public GameObject cameraEye;
     public Sprite lenghtSprite;
     public Sprite areaSprite;
     public Sprite barSprite;
+
 
     //Initializing as 0 for direct scene testing as this variable is set at the index scene
     private string currentUserId = "1";
@@ -57,6 +60,10 @@ public class ControllerManager : MonoBehaviour {
     {
         device = SteamVR_Controller.Input((int)trackedObject.index);
         float controllerValue = device.GetAxis().y;
+        float eyeStimuliAngle = 0f;
+
+        Debug.Log("a");
+
         if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
             // Only running this code for the first time the user presses an answer
@@ -65,6 +72,9 @@ public class ControllerManager : MonoBehaviour {
                 // Saving position and rotation of user's head by the time they start answering
                 headPosition = UnityEngine.VR.InputTracking.GetLocalPosition(UnityEngine.VR.VRNode.Head);
                 headRotation = UnityEngine.VR.InputTracking.GetLocalRotation(UnityEngine.VR.VRNode.Head);
+                Debug.Log(Quaternion.Angle(cameraEye.transform.rotation, stimuliPaper.transform.rotation));
+                eyeStimuliAngle = Quaternion.Angle(cameraEye.transform.rotation, stimuliPaper.transform.rotation);
+                
                 // Flag that user has entered a value for this trial
                 userHasEstimated = true;
             }
@@ -128,7 +138,8 @@ public class ControllerManager : MonoBehaviour {
                         PlayerPrefs.GetInt("userResponse"),
                         size1Output,
                         headPosition.x + ";" + headPosition.y + ";" + headPosition.z,
-                        headRotation.x + ";" + headRotation.y + ";" + headRotation.z
+                        headRotation.x + ";" + headRotation.y + ";" + headRotation.z,
+                        eyeStimuliAngle
                     );
                     NextTrial();
                 }
@@ -148,7 +159,7 @@ public class ControllerManager : MonoBehaviour {
 
         // This is the results you want 
         //_experiment.SetResultsHeader(new string[] { "Participant","Trial","Ratio","Property","Answer", "size1Output" });
-        _experiment.SetResultsHeader(new string[] { "Answer", "size1Output", "headPosition", "headRotation" });
+        _experiment.SetResultsHeader(new string[] { "Answer", "size1Output", "headPosition", "headRotation", "eyeStimuliAngle" });
 
         Debug.Log("Output path : <color=#E91E63>" + outputFilePath + "</color>");
 
@@ -173,7 +184,7 @@ public class ControllerManager : MonoBehaviour {
             return; //info temporary
         }
 
-        // REading values from the CSV : 
+        // Reading values from the CSV : 
         float ratio = float.Parse(_experiment.GetParameterData("Ratio"));
         string property = _experiment.GetParameterData("Property");
         size1 = float.Parse(_experiment.GetParameterData("Size1"));
@@ -294,20 +305,16 @@ public class ControllerManager : MonoBehaviour {
     }
 
 
-    public void SetResults(int response, float size1Output, string headPosition, string headRotation)
+    public void SetResults(int response, float size1Output, string headPosition, string headRotation, float eyeStimuliAngle)
     {
         // The result data correspond to _experiment.SetResultsHeader
         // Participant,Trial,Ratio,Property,Answer,CompletionTime
 
-        /*_experiment.SetResultData("Participant", currentUserId);
-        _experiment.SetResultData("Trial", currentTrialIndex.ToString());
-        _experiment.SetResultData("Ratio", ratio.ToString());
-        _experiment.SetResultData("Property", property);*/
         _experiment.SetResultData("Answer", response.ToString());
         _experiment.SetResultData("size1Output", size1Output.ToString());
         _experiment.SetResultData("headPosition", headPosition);
         _experiment.SetResultData("headRotation", headRotation);
-
+        _experiment.SetResultData("eyeStimuliAngle", eyeStimuliAngle.ToString());
 
         _experiment.EndTrial();
     }

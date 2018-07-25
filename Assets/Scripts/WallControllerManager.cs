@@ -28,6 +28,7 @@ public class WallControllerManager : MonoBehaviour {
     public GameObject stimulusPaper;
     public GameObject cameraEye;
     public GameObject canvases;
+    public GameObject sphere;
     public Sprite lenghtSprite;
     public Sprite areaSprite;
     public Sprite barSprite;
@@ -55,11 +56,17 @@ public class WallControllerManager : MonoBehaviour {
         PlayerPrefs.SetInt("userResponse", 50);
         userResponse = PlayerPrefs.GetInt("userResponse");
         currentUserId = PlayerPrefs.GetString("participant");
+        //Debug.Log(cameraEye.transform.position);
+        
     }
     void Update()
     {
         device = SteamVR_Controller.Input((int)trackedObject.index);
         float controllerValue = device.GetAxis().y;
+
+        Vector2 a = new Vector2(stimulusPaper.transform.position.x, stimulusPaper.transform.position.z) - new Vector2(cameraEye.transform.position.x, cameraEye.transform.position.z);
+        Debug.Log(System.Math.Abs(Mathf.Atan2(a.y, a.x) * Mathf.Rad2Deg));
+
         if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
             // Flag that user has entered a value for this trial
@@ -215,23 +222,9 @@ public class WallControllerManager : MonoBehaviour {
 
         switch (inputPosition)
         {
-            case 165:
-                canvases.transform.position = new Vector3(-1.6804f, 2.527f, -0.02f);
-                canvases.transform.rotation = Quaternion.Euler(0, -90f, 0);
-                stimuliBundle.transform.position = new Vector3(-2.311f, 1.75f, 0.027f);
-                if (orientation == "Vertical")
-                {
-                    stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 90f, 0);
-                }
-                else
-                {
-                    stimuliBundle.transform.localRotation = Quaternion.Euler(180f, 0, -90f);
-                }
-                break;
-            case 135:
-                canvases.transform.position = new Vector3(-1.6804f, 2.527f, -1.64f);
-                canvases.transform.rotation = Quaternion.Euler(0, -90f, 0);
-                stimuliBundle.transform.position = new Vector3(-2.311f, 1.75f, -1.662f);
+            case 100:
+  
+                stimuliBundle.transform.position = new Vector3(-2.311f, 1.75f, -2.9491f);
                 if (orientation == "Vertical")
                 {
                     stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 90f, 0);
@@ -242,18 +235,30 @@ public class WallControllerManager : MonoBehaviour {
                 }
                 break;
             case 105:
-                canvases.transform.position = new Vector3(-1.4f, 2.527f, -4.0624f);
-                canvases.transform.rotation = Quaternion.Euler(0, 180f, 0);
-                stimuliBundle.transform.position = new Vector3(-1.4f, 1.75f, -4.6939f);
+                
+                stimuliBundle.transform.position = new Vector3(-2.3119f, 1.3f, -1.8f);
                 if (orientation == "Vertical")
                 {
-                    stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 0, 0);
+                    stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 90f, 0);
                 }
                 else
                 {
-                    stimuliBundle.transform.localRotation = Quaternion.Euler(180f, -90f, -90f);
+                    stimuliBundle.transform.localRotation = Quaternion.Euler(180f, 0, -90f);
                 }
                 break;
+            case 135:
+   
+                stimuliBundle.transform.position = new Vector3(-2.3119f, 1.3f, -0.16997f);
+                if (orientation == "Vertical")
+                {
+                    stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 90f, 0);
+                }
+                else
+                {
+                    stimuliBundle.transform.localRotation = Quaternion.Euler(180f, 0, -90f);
+                }
+                break;
+            
             default:
                 Console.WriteLine("inputPosition not in switch case list");
                 break;
