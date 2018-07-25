@@ -1,4 +1,0 @@
-Participant,Practice,Block,Trial,Property,Ratio,Size1,Answer,size1Output,headPosition,headRotation,eyeStimuliAngle,TaskCompletionTime
-0,false,1,0,BarChart,0.73,1,49,1.03,0.4914632;0.6681184;-0.1815101,-0.2562307;-0.06001469;-0.01132394,0,6624.179
-0,false,1,1,BarChart,0.08,1,49,0.98,0.5115976;0.6434368;-0.1536087,-0.01619745;-0.1310032;-0.01144034,0,5729.703
-0,false,1,2,BarChart,0.28,1,49,1.03,0.4943523;0.7053334;-0.2333589,0.226881;0.1845516;0.1018889,0,7505.75

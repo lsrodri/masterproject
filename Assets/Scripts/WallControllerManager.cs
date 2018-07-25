@@ -64,9 +64,6 @@ public class WallControllerManager : MonoBehaviour {
         device = SteamVR_Controller.Input((int)trackedObject.index);
         float controllerValue = device.GetAxis().y;
 
-        Vector2 a = new Vector2(stimulusPaper.transform.position.x, stimulusPaper.transform.position.z) - new Vector2(cameraEye.transform.position.x, cameraEye.transform.position.z);
-        Debug.Log(System.Math.Abs(Mathf.Atan2(a.y, a.x) * Mathf.Rad2Deg));
-
         if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
             // Flag that user has entered a value for this trial
@@ -222,46 +219,27 @@ public class WallControllerManager : MonoBehaviour {
 
         switch (inputPosition)
         {
-            case 100:
-  
-                stimuliBundle.transform.position = new Vector3(-2.311f, 1.75f, -2.9491f);
-                if (orientation == "Vertical")
-                {
-                    stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 90f, 0);
-                }
-                else
-                {
-                    stimuliBundle.transform.localRotation = Quaternion.Euler(180f, 0, -90f);
-                }
+            case 150:
+                stimuliBundle.transform.position = new Vector3(2.786f, 1.3f, -5.5615f);
                 break;
-            case 105:
-                
-                stimuliBundle.transform.position = new Vector3(-2.3119f, 1.3f, -1.8f);
-                if (orientation == "Vertical")
-                {
-                    stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 90f, 0);
-                }
-                else
-                {
-                    stimuliBundle.transform.localRotation = Quaternion.Euler(180f, 0, -90f);
-                }
+            case 165:
+                stimuliBundle.transform.position = new Vector3(1.6875f, 1.3f, -5.5615f);
                 break;
-            case 135:
-   
-                stimuliBundle.transform.position = new Vector3(-2.3119f, 1.3f, -0.16997f);
-                if (orientation == "Vertical")
-                {
-                    stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 90f, 0);
-                }
-                else
-                {
-                    stimuliBundle.transform.localRotation = Quaternion.Euler(180f, 0, -90f);
-                }
+            case 170:
+                stimuliBundle.transform.position = new Vector3(0.52f, 1.3f, -5.5615f);
                 break;
-            
             default:
                 Console.WriteLine("inputPosition not in switch case list");
                 break;
+        }
+
+        if (orientation == "Vertical")
+        {
+            stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 0, 0);
+        }
+        else
+        {
+            stimuliBundle.transform.localRotation = Quaternion.Euler(180f, -90, -90f);
         }
 
         if (property == "Area")
