@@ -32,6 +32,7 @@ public class WallControllerManager : MonoBehaviour {
     public Sprite lenghtSprite;
     public Sprite areaSprite;
     public Sprite barSprite;
+    public Text cameraStimuliAngle;
 
     //Initializing as 0 for direct scene testing as this variable is set at the index scene
     private string currentUserId = "1";
@@ -64,10 +65,22 @@ public class WallControllerManager : MonoBehaviour {
         device = SteamVR_Controller.Input((int)trackedObject.index);
         float controllerValue = device.GetAxis().y;
 
+        Vector2 dir = new Vector2(stimulusPaper.transform.position.x, stimulusPaper.transform.position.z) - new Vector2(cameraEye.transform.position.x, cameraEye.transform.position.z);
+        cameraStimuliAngle.text = "Camera-Stimuli Angle: " + (System.Math.Abs(Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg));
+
         if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
-            // Flag that user has entered a value for this trial
-            userHasEstimated = true;
+            // Only running this code for the first time the user presses an answer
+            if (userHasEstimated == false)
+            {
+                // Getting participant angle on the moment they answer
+                /*Vector2 dir = new Vector2(stimulusPaper.transform.position.x, stimulusPaper.transform.position.z) - new Vector2(cameraEye.transform.position.x, cameraEye.transform.position.z);
+                var forward = new Vector2(cameraEye.transform.forward.x, cameraEye.transform.forward.z);
+                participantAngle = System.Math.Abs(Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);*/
+
+                // Flag that user has entered a value for this trial
+                userHasEstimated = true;
+            }
 
             /* If user presses the wheel while confirmation screen is open 
              * the application hides the confirmation screen
@@ -122,11 +135,6 @@ public class WallControllerManager : MonoBehaviour {
                 else if (currentTrialIndex != -1 && confirmationCanvas.activeSelf)
                 {
                     trialTime = Time.time - tempTime;
-
-                    // Getting participant angle on the moment they answer
-                    Vector2 dir = new Vector2(stimulusPaper.transform.position.x, stimulusPaper.transform.position.z) - new Vector2(cameraEye.transform.position.x, cameraEye.transform.position.z);
-                    var forward = new Vector2(cameraEye.transform.forward.x, cameraEye.transform.forward.z);
-                    participantAngle = System.Math.Abs(Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);
 
                     SetResults(
                         PlayerPrefs.GetInt("userResponse"),
@@ -220,20 +228,29 @@ public class WallControllerManager : MonoBehaviour {
         switch (inputPosition)
         {
             case 150:
-                stimuliBundle.transform.position = new Vector3(2.786f, 1.3f, -5.5615f);
+                stimuliBundle.transform.position = new Vector3(2.8255f, 1.3f, -5.5615f);
+                break;
+            case 155:
+                stimuliBundle.transform.position = new Vector3(2.6f, 1.3f, -5.5615f);
+                break;
+            case 160:
+                stimuliBundle.transform.position = new Vector3(2.27f, 1.3f, -5.5615f);
                 break;
             case 165:
-                stimuliBundle.transform.position = new Vector3(1.6875f, 1.3f, -5.5615f);
+                stimuliBundle.transform.position = new Vector3(1.737f, 1.3f, -5.5615f);
                 break;
             case 170:
-                stimuliBundle.transform.position = new Vector3(0.52f, 1.3f, -5.5615f);
+                stimuliBundle.transform.position = new Vector3(0.68f, 1.3f, -5.5615f);
+                break;
+            case 175:
+                stimuliBundle.transform.position = new Vector3(-2.5f, 1.3f, -5.5615f);
                 break;
             default:
                 Console.WriteLine("inputPosition not in switch case list");
                 break;
         }
-
-        if (orientation == "Vertical")
+        
+        if (orientation == "vertical")
         {
             stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 0, 0);
         }
@@ -278,8 +295,8 @@ public class WallControllerManager : MonoBehaviour {
             leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
             horizontalBar.SetActive(true);
             
-            leftStimulus.transform.localPosition = new Vector3(-0.113f, 0.012f, 0.26f);
-            rightStimulus.transform.localPosition = new Vector3(-0.257f, 0.012f, 0.26f);
+            leftStimulus.transform.localPosition = new Vector3(-0.0987f, 0.012f, 0.2756f);
+            rightStimulus.transform.localPosition = new Vector3(-0.271f, 0.012f, 0.2756f);
 
 
             rightSpriteRenderer.sprite = barSprite;
@@ -287,9 +304,6 @@ public class WallControllerManager : MonoBehaviour {
 
             // Calculating the right bar position to align bars to the bottom
             rightBarZ = (System.Math.Abs(calculatedLeftSize - calculatedRightSize) / 2) + 0.063f;
-
-            rightStimulus.transform.localPosition = new Vector3(-0.257f, 0.012f, 0.26f);
-
             
         }     
 

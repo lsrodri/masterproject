@@ -62,8 +62,6 @@ public class ControllerManager : MonoBehaviour {
         float controllerValue = device.GetAxis().y;
         float eyeStimuliAngle = 0f;
 
-        Debug.Log("a");
-
         if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
             // Only running this code for the first time the user presses an answer
@@ -284,7 +282,8 @@ public class ControllerManager : MonoBehaviour {
 
             leftSpriteRenderer.sprite = barSprite;
             leftStimulus.transform.localScale = new Vector3(propertySize, calculatedLeftSize, propertySize);
-            leftStimulus.transform.localPosition = new Vector3(-0.113f, 0.012f, 0.26f);
+            leftStimulus.transform.localPosition = new Vector3(-0.1f, 0.012f, 0.286f);
+            
 
             rightSpriteRenderer.sprite = barSprite;
             rightStimulus.transform.localScale = new Vector3(propertySize, calculatedRightSize, propertySize);
@@ -292,7 +291,7 @@ public class ControllerManager : MonoBehaviour {
             // Calculating the right bar position to align bars to the bottom
             rightBarZ = (System.Math.Abs(calculatedLeftSize - calculatedRightSize) / 2) + 0.063f;
 
-            rightStimulus.transform.localPosition = new Vector3(-0.257f, 0.012f, 0.26f);
+            rightStimulus.transform.localPosition = new Vector3(-0.273f, 0.012f, 0.286f);
 
             horizontalBar.SetActive(true);
         }     
