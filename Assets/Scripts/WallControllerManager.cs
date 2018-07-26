@@ -113,8 +113,8 @@ public class WallControllerManager : MonoBehaviour {
             }
             
             userResponse = (int)System.Math.Round(tempUserResponse, System.MidpointRounding.AwayFromZero);
-            outputUserResponse.text = userResponse.ToString() + "%";
-            outputConfirmation.text = userResponse.ToString() + "%";
+            outputUserResponse.text = userResponse.ToString();
+            //outputConfirmation.text = userResponse.ToString() + "%";
             PlayerPrefs.SetInt("userResponse", userResponse);
         }
         else if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
@@ -228,22 +228,22 @@ public class WallControllerManager : MonoBehaviour {
         switch (inputPosition)
         {
             case 150:
-                stimuliBundle.transform.position = new Vector3(2.8255f, 1.3f, -5.5615f);
+                stimuliBundle.transform.position = new Vector3(2.8255f, 1.3f, -5.57299f);
                 break;
             case 155:
-                stimuliBundle.transform.position = new Vector3(2.6f, 1.3f, -5.5615f);
+                stimuliBundle.transform.position = new Vector3(2.6f, 1.3f, -5.57299f);
                 break;
             case 160:
-                stimuliBundle.transform.position = new Vector3(2.27f, 1.3f, -5.5615f);
+                stimuliBundle.transform.position = new Vector3(2.27f, 1.3f, -5.57299f);
                 break;
             case 165:
-                stimuliBundle.transform.position = new Vector3(1.737f, 1.3f, -5.5615f);
+                stimuliBundle.transform.position = new Vector3(1.737f, 1.3f, -5.57299f);
                 break;
             case 170:
-                stimuliBundle.transform.position = new Vector3(0.68f, 1.3f, -5.5615f);
+                stimuliBundle.transform.position = new Vector3(0.68f, 1.3f, -5.57299f);
                 break;
             case 175:
-                stimuliBundle.transform.position = new Vector3(-2.5f, 1.3f, -5.5615f);
+                stimuliBundle.transform.position = new Vector3(-2.5f, 1.3f, -5.57299f);
                 break;
             default:
                 Console.WriteLine("inputPosition not in switch case list");
@@ -294,9 +294,9 @@ public class WallControllerManager : MonoBehaviour {
             leftSpriteRenderer.sprite = barSprite;
             leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
             horizontalBar.SetActive(true);
-            
-            leftStimulus.transform.localPosition = new Vector3(-0.0987f, 0.012f, 0.2756f);
-            rightStimulus.transform.localPosition = new Vector3(-0.271f, 0.012f, 0.2756f);
+
+            leftStimulus.transform.localPosition = new Vector3(-0.1f, 0.011f, 0.312f);
+            rightStimulus.transform.localPosition = new Vector3(-0.278f, 0.011f, 0.312f);
 
 
             rightSpriteRenderer.sprite = barSprite;

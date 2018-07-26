@@ -1,0 +1,2465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDate>
+    <guid>05ec5cf00ca181d45a42ba1870e148c3</guid>
+    <fileName>Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs</fileName>
+    <timeStamp>2016-06-25T06:28:23+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Characters.FirstPerson.FirstPersonController</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>83c81407209f85e4c87c0cda8b32868e</guid>
+    <fileName>Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/HeadBob.cs</fileName>
+    <timeStamp>2016-06-25T06:33:19+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Characters.FirstPerson.HeadBob</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>37e60a97f2c87ae41b6cdc1055d78cb9</guid>
+    <fileName>Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs</fileName>
+    <timeStamp>2016-06-25T06:30:18+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Characters.FirstPerson.MouseLook</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>81c9795a96c094f4cbde4d65546aa9b2</guid>
+    <fileName>Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs</fileName>
+    <timeStamp>2016-06-25T06:33:14+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController</string>
+      <string>UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController+AdvancedSettings</string>
+      <string>UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController+MovementSettings</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e004fefca5c7ba44d9c5ffd46fdee2ed</guid>
+    <fileName>Assets/Standard Assets/Characters/RollerBall/Scripts/Ball.cs</fileName>
+    <timeStamp>2016-06-25T06:36:25+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Vehicles.Ball.Ball</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>daa7e0829bc72c94babd728cc0466196</guid>
+    <fileName>Assets/Standard Assets/Characters/RollerBall/Scripts/BallUserControl.cs</fileName>
+    <timeStamp>2016-06-25T06:36:10+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Vehicles.Ball.BallUserControl</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8c5335f0882fe4d478883cc8c58ce906</guid>
+    <fileName>Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/AICharacterControl.cs</fileName>
+    <timeStamp>2018-07-11T14:47:16.2613357+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Characters.ThirdPerson.AICharacterControl</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ce7a80d520cacc042b5fe14f373d8173</guid>
+    <fileName>Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs</fileName>
+    <timeStamp>2016-06-25T06:35:47+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>521b611700410be45810047f0a74e899</guid>
+    <fileName>Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs</fileName>
+    <timeStamp>2016-06-25T06:31:45+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9ab98b66288df7b4fa182075f2f12bd6</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs</fileName>
+    <timeStamp>2016-06-25T06:33:47+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.AxisTouchButton</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>85bf3be603548374ca46f521a3aa7fda</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/ButtonHandler.cs</fileName>
+    <timeStamp>2016-06-25T06:33:26+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.ButtonHandler</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6ac1ce5a5adfd9f46adbf5b6f752a47c</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs</fileName>
+    <timeStamp>2016-06-25T06:32:29+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager</string>
+      <string>UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager+VirtualButton</string>
+      <string>UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager+VirtualAxis</string>
+      <string>UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager+ActiveInputMethod</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7d3269566d48b8447bb48d2259e28f8b</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/InputAxisScrollbar.cs</fileName>
+    <timeStamp>2016-06-25T06:33:09+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.InputAxisScrollbar</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>00c3c865782347f41b6358d9fba14b48</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/Joystick.cs</fileName>
+    <timeStamp>2016-06-25T06:28:15+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.Joystick</string>
+      <string>UnityStandardAssets.CrossPlatformInput.Joystick+AxisOption</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>71398ce7fbc3a5b4fa50b50bd54317a7</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs</fileName>
+    <timeStamp>2016-06-25T06:32:57+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.MobileControlRig</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5c2d84226fbbaf94e9c1451f1c39b06a</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/TiltInput.cs</fileName>
+    <timeStamp>2016-06-25T06:32:09+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.TiltInput</string>
+      <string>UnityStandardAssets.CrossPlatformInput.TiltInput+AxisMapping</string>
+      <string>UnityStandardAssets.CrossPlatformInput.TiltInput+AxisOptions</string>
+      <string>UnityStandardAssets.CrossPlatformInput.Inspector.TiltInputAxisStylePropertyDrawer</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1caf40fc8bebb6b43b2550c05ca791d6</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/TouchPad.cs</fileName>
+    <timeStamp>2016-06-25T06:29:31+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.TouchPad</string>
+      <string>UnityStandardAssets.CrossPlatformInput.TouchPad+ControlStyle</string>
+      <string>UnityStandardAssets.CrossPlatformInput.TouchPad+AxisOption</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0f57aeb1b8dce3342bea5c28ac17db24</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs</fileName>
+    <timeStamp>2016-06-25T06:28:33+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.VirtualInput</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9703d53e47195aa4190acd11369ccd1b</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs</fileName>
+    <timeStamp>2016-06-25T06:33:45+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.PlatformSpecific.MobileInput</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9961032f4f02c4f41997c3ea399d2f22</guid>
+    <fileName>Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs</fileName>
+    <timeStamp>2016-06-25T06:33:47+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.PlatformSpecific.StandaloneInput</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>646b5bc27a658f447b1d929fd5ffbd70</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/Antialiasing.cs</fileName>
+    <timeStamp>2016-06-25T06:32:24+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.AAMode</string>
+      <string>UnityStandardAssets.ImageEffects.Antialiasing</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7fceaeb339b971b429c4cc600acabd13</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/Bloom.cs</fileName>
+    <timeStamp>2016-06-25T06:33:10+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.Bloom</string>
+      <string>UnityStandardAssets.ImageEffects.Bloom+BloomQuality</string>
+      <string>UnityStandardAssets.ImageEffects.Bloom+BloomScreenBlendMode</string>
+      <string>UnityStandardAssets.ImageEffects.Bloom+HDRBloomMode</string>
+      <string>UnityStandardAssets.ImageEffects.Bloom+TweakMode</string>
+      <string>UnityStandardAssets.ImageEffects.Bloom+LensFlareStyle</string>
+      <string>UnityStandardAssets.ImageEffects.HDRBloomMode</string>
+      <string>UnityStandardAssets.ImageEffects.BloomScreenBlendMode</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>02536f33053638549ab5c50ff3ecc0de</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/BloomAndFlares.cs</fileName>
+    <timeStamp>2016-06-25T06:28:17+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.LensflareStyle34</string>
+      <string>UnityStandardAssets.ImageEffects.TweakMode34</string>
+      <string>UnityStandardAssets.ImageEffects.HDRBloomMode</string>
+      <string>UnityStandardAssets.ImageEffects.BloomScreenBlendMode</string>
+      <string>UnityStandardAssets.ImageEffects.BloomAndFlares</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4975a6e437fc3b149a8cd508ce5bdd69</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/BloomOptimized.cs</fileName>
+    <timeStamp>2016-06-25T06:31:11+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.BloomOptimized</string>
+      <string>UnityStandardAssets.ImageEffects.BloomOptimized+BlurType</string>
+      <string>UnityStandardAssets.ImageEffects.BloomOptimized+Resolution</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>34382083ad114a07d000fbfb8d76c639</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/Blur.cs</fileName>
+    <timeStamp>2016-06-25T06:30:15+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.Blur</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7fc6bde01469c7b4badee5362f191d96</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/BlurOptimized.cs</fileName>
+    <timeStamp>2016-06-25T06:33:10+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.BlurOptimized</string>
+      <string>UnityStandardAssets.ImageEffects.BlurOptimized+BlurType</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>97e9b95cf609d96409b6c40519432957</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/CameraMotionBlur.cs</fileName>
+    <timeStamp>2016-06-25T06:33:45+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.CameraMotionBlur</string>
+      <string>UnityStandardAssets.ImageEffects.CameraMotionBlur+MotionBlurFilter</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1fd999d1b2cf94a45a5b0a47ce074bef</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionCurves.cs</fileName>
+    <timeStamp>2016-06-25T06:29:34+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ColorCorrectionCurves</string>
+      <string>UnityStandardAssets.ImageEffects.ColorCorrectionCurves+ColorCorrectionMode</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8cde8c0fd649d9b46bb403ba5e157391</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionLookup.cs</fileName>
+    <timeStamp>2016-06-25T06:33:34+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ColorCorrectionLookup</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ea59781cad112c75d0008dfa8d76c639</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionRamp.cs</fileName>
+    <timeStamp>2016-06-25T06:36:41+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ColorCorrectionRamp</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3309686a9fbbe6e42a182d5e0257704c</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/ContrastEnhance.cs</fileName>
+    <timeStamp>2016-06-25T06:30:14+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ContrastEnhance</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ec92b071d2d424aecb3e46f28eb63174</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/ContrastStretch.cs</fileName>
+    <timeStamp>2016-06-25T06:36:42+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ContrastStretch</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d64b4f3a592f28b44bf19223ac8b6cd2</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/CreaseShading.cs</fileName>
+    <timeStamp>2016-06-25T06:36:05+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.CreaseShading</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bd70d448b18cfbc46af26466f752332c</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/DepthOfField.cs</fileName>
+    <timeStamp>2018-07-11T14:47:16.2663341+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.DepthOfField</string>
+      <string>UnityStandardAssets.ImageEffects.DepthOfField+BlurSampleCount</string>
+      <string>UnityStandardAssets.ImageEffects.DepthOfField+BlurType</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>83d8db0ec466c14429f58c68c16398a1</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/DepthOfFieldDeprecated.cs</fileName>
+    <timeStamp>2016-06-25T06:33:20+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated</string>
+      <string>UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+BokehDestination</string>
+      <string>UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+DofBlurriness</string>
+      <string>UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+DofResolution</string>
+      <string>UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+Dof34QualitySetting</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>730475ee64f9a894bbac0d9e6f22e813</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/EdgeDetection.cs</fileName>
+    <timeStamp>2016-06-25T06:32:58+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.EdgeDetection</string>
+      <string>UnityStandardAssets.ImageEffects.EdgeDetection+EdgeDetectMode</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4739c22ef73ad62488fe344c8fe9addd</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/Fisheye.cs</fileName>
+    <timeStamp>2016-06-25T06:31:07+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.Fisheye</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>76b5ec6153a1d55438228df10fe66844</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/GlobalFog.cs</fileName>
+    <timeStamp>2016-06-25T06:32:59+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.GlobalFog</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>243a781cad112c75d0008dfa8d76c639</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/Grayscale.cs</fileName>
+    <timeStamp>2016-06-25T06:29:40+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.Grayscale</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f6469eb0ad1119d6d00011d98d76c639</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/ImageEffectBase.cs</fileName>
+    <timeStamp>2016-06-25T06:36:51+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ImageEffectBase</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>89a037199d11087f1100e2b844295342</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/ImageEffects.cs</fileName>
+    <timeStamp>2016-06-25T06:33:31+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ImageEffects</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>478a2083ad114a07d000fbfb8d76c639</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/MotionBlur.cs</fileName>
+    <timeStamp>2016-06-25T06:31:11+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.MotionBlur</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9191284b058eef549b7108b5f04e1117</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/NoiseAndGrain.cs</fileName>
+    <timeStamp>2016-06-25T06:33:42+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.NoiseAndGrain</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a88a26a276b4e47619ce2c5adad33fab</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/NoiseAndScratches.cs</fileName>
+    <timeStamp>2016-06-25T06:34:05+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.NoiseAndScratches</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b6f4318ec6c2bf643a0f9edfeeaba0ec</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs</fileName>
+    <timeStamp>2016-06-25T06:34:37+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.PostEffectsBase</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>50b03df8f04b5c441aaac5b7fccb4734</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsHelper.cs</fileName>
+    <timeStamp>2016-06-25T06:31:42+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.PostEffectsHelper</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a20852ce049f64e4695a48b6a354be83</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/Quads.cs</fileName>
+    <timeStamp>2016-06-25T06:33:55+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.Quads</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6f19108706fdce9469603d07980eb8ad</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/ScreenOverlay.cs</fileName>
+    <timeStamp>2016-06-25T06:32:42+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ScreenOverlay</string>
+      <string>UnityStandardAssets.ImageEffects.ScreenOverlay+OverlayBlendMode</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>75febd242c999f04d9654522a10c006b</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/ScreenSpaceAmbientObscurance.cs</fileName>
+    <timeStamp>2016-06-25T06:32:59+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ScreenSpaceAmbientObscurance</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b0923359e9e352a4b9b11c7b7161ad67</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/ScreenSpaceAmbientOcclusion.cs</fileName>
+    <timeStamp>2016-06-25T06:34:19+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ScreenSpaceAmbientOcclusion</string>
+      <string>UnityStandardAssets.ImageEffects.ScreenSpaceAmbientOcclusion+SSAOSamples</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a07a781cad112c75d0008dfa8d76c639</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/SepiaTone.cs</fileName>
+    <timeStamp>2016-06-25T06:33:54+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.SepiaTone</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>60e318a6043c1cb4a8ce1c8805bab930</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/SunShafts.cs</fileName>
+    <timeStamp>2016-06-25T06:32:14+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.SunShafts</string>
+      <string>UnityStandardAssets.ImageEffects.SunShafts+ShaftsScreenBlendMode</string>
+      <string>UnityStandardAssets.ImageEffects.SunShafts+SunShaftsResolution</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a22b3a7095a744a428c134b5e26ad68e</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/TiltShift.cs</fileName>
+    <timeStamp>2016-06-25T06:33:56+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.TiltShift</string>
+      <string>UnityStandardAssets.ImageEffects.TiltShift+TiltShiftQuality</string>
+      <string>UnityStandardAssets.ImageEffects.TiltShift+TiltShiftMode</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e50e925fb93c78246bf995d9dc3a2330</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/Tonemapping.cs</fileName>
+    <timeStamp>2016-06-25T06:36:35+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.Tonemapping</string>
+      <string>UnityStandardAssets.ImageEffects.Tonemapping+AdaptiveTexSize</string>
+      <string>UnityStandardAssets.ImageEffects.Tonemapping+TonemapperType</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>18b91636de2ba3445913e4cf38528dc8</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/Triangles.cs</fileName>
+    <timeStamp>2016-06-25T06:29:25+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.Triangles</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bdda781cad112c75d0008dfa8d76c639</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/Twirl.cs</fileName>
+    <timeStamp>2016-06-25T06:34:51+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.Twirl</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dd6d4281e5d7cd44d8c6e38bc2c1b8d8</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/VignetteAndChromaticAberration.cs</fileName>
+    <timeStamp>2016-06-25T06:36:11+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration</string>
+      <string>UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration+AberrationMode</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a94b781cad112c75d0008dfa8d76c639</guid>
+    <fileName>Assets/Standard Assets/Effects/ImageEffects/Scripts/Vortex.cs</fileName>
+    <timeStamp>2016-06-25T06:34:06+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.Vortex</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c8634e062924929664361c08745211fb</guid>
+    <fileName>Assets/Standard Assets/Utility/ActivateTrigger.cs</fileName>
+    <timeStamp>2016-06-25T06:35:11+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.ActivateTrigger</string>
+      <string>UnityStandardAssets.Utility.ActivateTrigger+Mode</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9c4978ff6447f9040b84acc89b0bbdc8</guid>
+    <fileName>Assets/Standard Assets/Utility/AutoMobileShaderSwitch.cs</fileName>
+    <timeStamp>2016-06-25T06:33:49+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.AutoMobileShaderSwitch</string>
+      <string>UnityStandardAssets.Utility.AutoMobileShaderSwitch+ReplacementList</string>
+      <string>UnityStandardAssets.Utility.AutoMobileShaderSwitch+ReplacementDefinition</string>
+      <string>UnityStandardAssets.Utility.Inspector.ReplacementListDrawer</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a1347817507220a4384f3ff6f7c24546</guid>
+    <fileName>Assets/Standard Assets/Utility/AutoMoveAndRotate.cs</fileName>
+    <timeStamp>2016-06-25T06:33:55+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.AutoMoveAndRotate</string>
+      <string>UnityStandardAssets.Utility.AutoMoveAndRotate+Vector3andSpace</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d1e2e7a54dcc8694ab1eca46d072f264</guid>
+    <fileName>Assets/Standard Assets/Utility/CameraRefocus.cs</fileName>
+    <timeStamp>2016-06-25T06:35:49+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.CameraRefocus</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>492f54f4accf00440828ffcb9e4fcc19</guid>
+    <fileName>Assets/Standard Assets/Utility/CurveControlledBob.cs</fileName>
+    <timeStamp>2016-06-25T06:31:11+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.CurveControlledBob</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>58650e15a2607e44daa0f150e0061d89</guid>
+    <fileName>Assets/Standard Assets/Utility/DragRigidbody.cs</fileName>
+    <timeStamp>2016-06-25T06:31:56+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.DragRigidbody</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8566902b50d5bfb4fb7f8b89f9cdbe8b</guid>
+    <fileName>Assets/Standard Assets/Utility/DynamicShadowSettings.cs</fileName>
+    <timeStamp>2016-06-25T06:33:25+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.DynamicShadowSettings</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>246cc59c7a84ea44f87f6b70acfe30c5</guid>
+    <fileName>Assets/Standard Assets/Utility/FollowTarget.cs</fileName>
+    <timeStamp>2016-06-25T06:29:40+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.FollowTarget</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9b886447cba80f74e820adb3c9e70c76</guid>
+    <fileName>Assets/Standard Assets/Utility/ForcedReset.cs</fileName>
+    <timeStamp>2016-06-25T06:33:48+02:00</timeStamp>
+    <typeFullName>
+      <string>ForcedReset</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6045a93fb05b9c74884821030da2c46c</guid>
+    <fileName>Assets/Standard Assets/Utility/FOVKick.cs</fileName>
+    <timeStamp>2016-06-25T06:32:14+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.FOVKick</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>22bbf57ec543cee42a5aa0ec2dd9e457</guid>
+    <fileName>Assets/Standard Assets/Utility/FPSCounter.cs</fileName>
+    <timeStamp>2016-06-25T06:29:37+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.FPSCounter</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c1bbfafbde15c854681023b9e01e12dd</guid>
+    <fileName>Assets/Standard Assets/Utility/LerpControlledBob.cs</fileName>
+    <timeStamp>2016-06-25T06:35:01+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.LerpControlledBob</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>643c971818f68d3439e84b5d8bdafe07</guid>
+    <fileName>Assets/Standard Assets/Utility/ObjectResetter.cs</fileName>
+    <timeStamp>2016-06-25T06:32:24+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.ObjectResetter</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>29014cd42b6d273408e0ceefd336c0b3</guid>
+    <fileName>Assets/Standard Assets/Utility/ParticleSystemDestroyer.cs</fileName>
+    <timeStamp>2016-06-25T06:29:48+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.ParticleSystemDestroyer</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b27507c5d0efbbd47ac8c1de9a1a0a35</guid>
+    <fileName>Assets/Standard Assets/Utility/PlatformSpecificContent.cs</fileName>
+    <timeStamp>2016-06-25T06:34:23+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.PlatformSpecificContent</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>69b69a5b0e0a85b4aa97a7edc40c37d1</guid>
+    <fileName>Assets/Standard Assets/Utility/SimpleActivatorMenu.cs</fileName>
+    <timeStamp>2016-06-25T06:32:27+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.SimpleActivatorMenu</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>cadd54e4832aeef4b9359f44cbe335cd</guid>
+    <fileName>Assets/Standard Assets/Utility/SimpleMouseRotator.cs</fileName>
+    <timeStamp>2016-06-25T06:35:12+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.SimpleMouseRotator</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f76806479d916a64aa03f8e3eba7912f</guid>
+    <fileName>Assets/Standard Assets/Utility/SmoothFollow.cs</fileName>
+    <timeStamp>2016-06-25T06:36:52+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.SmoothFollow</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3a7cedf246fca744f90cbdc9dbe41166</guid>
+    <fileName>Assets/Standard Assets/Utility/TimedObjectActivator.cs</fileName>
+    <timeStamp>2016-06-25T06:30:21+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.TimedObjectActivator</string>
+      <string>UnityStandardAssets.Utility.TimedObjectActivator+Entries</string>
+      <string>UnityStandardAssets.Utility.TimedObjectActivator+Entry</string>
+      <string>UnityStandardAssets.Utility.TimedObjectActivator+Action</string>
+      <string>UnityStandardAssets.Utility.Inspector.EntriesDrawer</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>37fac21d1f093d344816942d1abce94e</guid>
+    <fileName>Assets/Standard Assets/Utility/TimedObjectDestructor.cs</fileName>
+    <timeStamp>2016-06-25T06:30:19+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.TimedObjectDestructor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>70852dc981465ea48bb527b9e33a87fd</guid>
+    <fileName>Assets/Standard Assets/Utility/WaypointCircuit.cs</fileName>
+    <timeStamp>2016-06-25T06:32:57+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.WaypointCircuit</string>
+      <string>UnityStandardAssets.Utility.WaypointCircuit+RoutePoint</string>
+      <string>UnityStandardAssets.Utility.WaypointCircuit+WaypointList</string>
+      <string>UnityStandardAssets.Utility.Inspector.WaypointListDrawer</string>
+      <string>UnityStandardAssets.Utility.Inspector.WaypointListDrawer+TransformNameComparer</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c5cb22d331ef7d64796f917c6a455a32</guid>
+    <fileName>Assets/Standard Assets/Utility/WaypointProgressTracker.cs</fileName>
+    <timeStamp>2016-06-25T06:35:08+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.Utility.WaypointProgressTracker</string>
+      <string>UnityStandardAssets.Utility.WaypointProgressTracker+ProgressStyle</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>842f43ac94b4b4f72ac0898650ddcc44</guid>
+    <fileName>Assets/Cleaner/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.AssetCollector</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>805140a4856714e288ea84985d3023df</guid>
+    <fileName>Assets/Cleaner/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>202c278a17939b24c8b79c0ee1f94d8f</guid>
+    <fileName>Assets/Cleaner/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.ClassReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0d05386265df34bac8d0b6df44aa494c</guid>
+    <fileName>Assets/Cleaner/Editor/CollectionData.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>CollectionData</string>
+      <string>TypeDate</string>
+      <string>IReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>74eec3bfba0594259ac2843353c082a3</guid>
+    <fileName>Assets/Cleaner/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.FindUnusedAssetsWindow</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2c4f01a79a77a45a9a84004cc2b78098</guid>
+    <fileName>Assets/Cleaner/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.ShaderReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>db7667203062c644ea1877077e30ebd6</guid>
+    <fileName>Assets/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs</fileName>
+    <timeStamp>2016-06-25T06:36:11+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.CrossPlatformInput.Inspector.CrossPlatformInitialize</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ba15fa37442517749a3c4640a4ad4054</guid>
+    <fileName>Assets/Editor/ImageEffects/AntialiasingEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:34:42+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.AntialiasingEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4deca87cb459d1642ac8f734856ca84e</guid>
+    <fileName>Assets/Editor/ImageEffects/BloomAndFlaresEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:31:22+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.BloomAndFlaresEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>43fcc28c40e404d4eabfc88b1dbda7b5</guid>
+    <fileName>Assets/Editor/ImageEffects/BloomEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:30:38+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.BloomEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>80cbbe1c107bf5e43a96347d3dfc2658</guid>
+    <fileName>Assets/Editor/ImageEffects/CameraMotionBlurEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:33:11+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.CameraMotionBlurEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a4a9489f73e4f0344ab3fc97bdf5170b</guid>
+    <fileName>Assets/Editor/ImageEffects/ColorCorrectionCurvesEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:33:59+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ColorCorrectionCurvesEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>66c17be95fbf398439ea09f8892a8b43</guid>
+    <fileName>Assets/Editor/ImageEffects/ColorCorrectionLookupEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:32:25+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.ColorCorrectionLookupEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>943c59645eb905144a0990b57e13a6f9</guid>
+    <fileName>Assets/Editor/ImageEffects/DepthOfFieldDeprecatedEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:33:42+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.DepthOfFieldDeprecatedEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>427fdf36119bab44a9131abd19b90f57</guid>
+    <fileName>Assets/Editor/ImageEffects/DepthOfFieldEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:30:36+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.DepthOfFieldEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b5f1618d14cd80f4da910f00b04af37f</guid>
+    <fileName>Assets/Editor/ImageEffects/EdgeDetectionEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:34:33+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.EdgeDetectionEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>abd63abcc46fbcb4588164b671b52d3b</guid>
+    <fileName>Assets/Editor/ImageEffects/NoiseAndGrainEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:34:17+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.NoiseAndGrainEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>54f6f6313f2aecc4d81035ec0031e313</guid>
+    <fileName>Assets/Editor/ImageEffects/SunShaftsEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:31:48+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.SunShaftsEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0f7cab214f141f642b87a5bdbd14653e</guid>
+    <fileName>Assets/Editor/ImageEffects/TonemappingEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:28:33+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.TonemappingEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>08126bf2baa528c4cb9c60340a24e5d6</guid>
+    <fileName>Assets/Editor/ImageEffects/VignetteAndChromaticAberrationEditor.cs</fileName>
+    <timeStamp>2016-06-25T06:28:25+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityStandardAssets.ImageEffects.VignetteAndChromaticAberrationEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5335229792d072148816ee62fabe1980</guid>
+    <fileName>Assets/ezExp/Examples/RunExperiment.cs</fileName>
+    <timeStamp>2018-07-05T19:00:27.4065804+02:00</timeStamp>
+    <typeFullName>
+      <string>RunExperiment</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>02fed5712c55ec94fbf0fed2a3fa7479</guid>
+    <fileName>Assets/ezExp/Examples/Base/TestEzExp.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.0278976+02:00</timeStamp>
+    <typeFullName>
+      <string>TestEzExp</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a4ebe3f711a99dc4785622b40dd55ec6</guid>
+    <fileName>Assets/ezExp/Examples/Definition/Definition.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.232831+02:00</timeStamp>
+    <typeFullName>
+      <string>Definition</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>47724e5e2473a2c40ae27f810dcba517</guid>
+    <fileName>Assets/ezExp/Scripts/Experiment.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.7922972+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityEzExp.ParticipantIDNotFoundException</string>
+      <string>UnityEzExp.AllTrialsPerformedException</string>
+      <string>UnityEzExp.TrialNotLoadedException</string>
+      <string>UnityEzExp.TrialsEmptyException</string>
+      <string>UnityEzExp.TrialIdOutOfBoundsException</string>
+      <string>UnityEzExp.ParticipantsHeaderNotFoundException</string>
+      <string>UnityEzExp.ParameterNotFoundException</string>
+      <string>UnityEzExp.RecordBehavior</string>
+      <string>UnityEzExp.FileType</string>
+      <string>UnityEzExp.Experiment</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>448f98d79e3192c4ca883a11aebdb992</guid>
+    <fileName>Assets/ezExp/Scripts/EzExp.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.669337+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityEzExp.LogLevel</string>
+      <string>UnityEzExp.SaveType</string>
+      <string>UnityEzExp.TimeFormat</string>
+      <string>UnityEzExp.TemporalState</string>
+      <string>UnityEzExp.EzExp</string>
+      <string>UnityEzExp.EzExp+ExperimentNotCreatedException</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7421ef619b52f5e45b21a11be0ba151a</guid>
+    <fileName>Assets/ezExp/Scripts/EzExpDebug.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.792974+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityEzExp.Log</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>345299d9cb18dd14684332e69c0906d1</guid>
+    <fileName>Assets/ezExp/Scripts/EzExpUI.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.7829775+02:00</timeStamp>
+    <typeFullName>
+      <string>EzExpUI</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>671c64fa8c3fb46bc8e11625b5883c3d</guid>
+    <fileName>Assets/ezExp/Scripts/Trial.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.4097744+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityEzExp.Trial</string>
+      <string>UnityEzExp.Trial+TimerAlreadyExistsException</string>
+      <string>UnityEzExp.Trial+NotExperimentBoundException</string>
+      <string>UnityEzExp.Trial+TemporalStateException</string>
+      <string>UnityEzExp.Trial+DifferentSizeException</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4cbc12d774ed618418c4f429d2c388cf</guid>
+    <fileName>Assets/ezExp/Scripts/Utils/EzTimer.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.0189005+02:00</timeStamp>
+    <typeFullName>
+      <string>UnityEzExp.EzTimer</string>
+      <string>UnityEzExp.EzTimer+TimerEndedException</string>
+      <string>UnityEzExp.EzTimer+TimerAlreadyStartedException</string>
+      <string>UnityEzExp.EzTimer+TimerNotStartedException</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a578dd1cf63541744bb44b261022efe8</guid>
+    <fileName>Assets/Scripts/Angles.cs</fileName>
+    <timeStamp>2018-07-25T22:17:05.0464865+02:00</timeStamp>
+    <typeFullName>
+      <string>Angles</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>05560793356a512409f1ac5aa718865f</guid>
+    <fileName>Assets/Scripts/CameraFollow.cs</fileName>
+    <timeStamp>2018-07-25T14:15:43.0540884+02:00</timeStamp>
+    <typeFullName>
+      <string>CameraFollow</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dccc369b0d5f4c34aa3484866cdaf25a</guid>
+    <fileName>Assets/Scripts/ControllerManager.cs</fileName>
+    <timeStamp>2018-07-25T22:55:24.7098057+02:00</timeStamp>
+    <typeFullName>
+      <string>ControllerManager</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0e377ecc9e29a874a930e02af5f3aea4</guid>
+    <fileName>Assets/Scripts/ParticipantSelection.cs</fileName>
+    <timeStamp>2018-07-09T19:23:05.8295609+02:00</timeStamp>
+    <typeFullName>
+      <string>ParticipantSelection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ba166a942d4673140a4d78f459573589</guid>
+    <fileName>Assets/Scripts/WallControllerManager.cs</fileName>
+    <timeStamp>2018-07-25T22:18:20.308453+02:00</timeStamp>
+    <typeFullName>
+      <string>WallControllerManager</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7b5c38c5730499847b68e0dbfd043bf2</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/VRInteractableObject.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.3797837+02:00</timeStamp>
+    <typeFullName>
+      <string>VRInteractableObject</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>42265016e32c50445a27c6a02cfd6757</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/AttachmentScripts/VRIO_Jointed.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.7729801+02:00</timeStamp>
+    <typeFullName>
+      <string>VRIO_Jointed</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>54f6329d3f847e14091a70fbe0b30f32</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/AttachmentScripts/VRIO_Parented.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.1048727+02:00</timeStamp>
+    <typeFullName>
+      <string>VRIO_Parented</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>08ea36103d1d4bb449827a125b150e4e</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/AttachmentScripts/VRIO_Physics.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.1091949+02:00</timeStamp>
+    <typeFullName>
+      <string>VRIO_Physics</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d8ce52d67fc5e8a4bb9f1857dd09f064</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/InputScripts/VRControllerInput.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.4980694+02:00</timeStamp>
+    <typeFullName>
+      <string>VRControllerInput</string>
+      <string>VRControllerInput+TouchpadPress</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>27fef12dacd7ad64e8e6601755dffedb</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/InputScripts/VRRaycastInput.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.7753027+02:00</timeStamp>
+    <typeFullName>
+      <string>VRRaycastInput</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>108b7ccbd441ca24781325bbc10dbf1a</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/RaycastInteractions/VRIO_RaycastCanvasExample.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.9999067+02:00</timeStamp>
+    <typeFullName>
+      <string>VRIO_RaycastCanvasExample</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>54c7336513e3e854b87af9d431052504</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/RaycastInteractions/VRIO_RaycastExample.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.4684029+02:00</timeStamp>
+    <typeFullName>
+      <string>VRIO_RaycastExample</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f51b2b5abfaea6d4396a3a50774e2e3e</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/RaycastInteractions/VRIO_WatchExample.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.9216084+02:00</timeStamp>
+    <typeFullName>
+      <string>VRIO_WatchExample</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>087d6ab5d39d01d49a394b25f525a147</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/SpecialScripts/VRIO_Button.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.4867491+02:00</timeStamp>
+    <typeFullName>
+      <string>VRIO_Button</string>
+      <string>VRIO_Button+ButtonPress</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e04e5fdc20db8ef46ad78653e12031ba</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/SpecialScripts/VRIO_Gun.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.0922004+02:00</timeStamp>
+    <typeFullName>
+      <string>VRIO_Gun</string>
+      <string>VRIO_Gun+GunTypes</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ab06b1a5c860d2240a791c6c8bebfd21</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/SpecialScripts/VRIO_PullLever.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.3907802+02:00</timeStamp>
+    <typeFullName>
+      <string>VRIO_PullLever</string>
+      <string>VRIO_PullLever+ReleaseLeverEvent</string>
+      <string>VRIO_PullLever+PullLeverEvent</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>622d3ca6ebf63ba41805de1b6ace58f0</guid>
+    <fileName>Assets/Scripts/ComplexInteractables/SpecialScripts/VRIO_SlideLever.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.7643065+02:00</timeStamp>
+    <typeFullName>
+      <string>VRIO_SlideLever</string>
+      <string>VRIO_SlideLever+SlideLeverEvent</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7a25a0400fc4bc74fb1e3ec6c09ebc55</guid>
+    <fileName>Assets/Scripts/Other/BallButton.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.0092276+02:00</timeStamp>
+    <typeFullName>
+      <string>BallButton</string>
+      <string>BallButton+BallButtonPress</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5acfe8bdd02f2684d903d130a32e68c1</guid>
+    <fileName>Assets/Scripts/Other/BallCreation.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.9992302+02:00</timeStamp>
+    <typeFullName>
+      <string>BallCreation</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>81f2f8a991951764a80efa14356af380</guid>
+    <fileName>Assets/Scripts/Other/BulletController.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.0938766+02:00</timeStamp>
+    <typeFullName>
+      <string>BulletController</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>cb9122836073edb479cc6abacf639a05</guid>
+    <fileName>Assets/Scripts/Other/ResetController.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.473753+02:00</timeStamp>
+    <typeFullName>
+      <string>ResetController</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>be7e90f52a7ef7d43afbc1f0559aef5b</guid>
+    <fileName>Assets/Scripts/Other/TargetController.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.9872344+02:00</timeStamp>
+    <typeFullName>
+      <string>TargetController</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>729e2c01049f356499434f11736fd191</guid>
+    <fileName>Assets/Scripts/SimpleExample/SimpleExample_VRControllerInput.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.8066456+02:00</timeStamp>
+    <typeFullName>
+      <string>SimpleExample_VRControllerInput</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f8beb8854657eb147837bbbabb659a44</guid>
+    <fileName>Assets/Scripts/SimpleExample/SimpleExample_VRInteractableObject.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.2841386+02:00</timeStamp>
+    <typeFullName>
+      <string>SimpleExample_VRInteractableObject</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5ba22c80948c94e44a82b9fd1b3abd0d</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_Editor.cs</fileName>
+    <timeStamp>2018-07-03T17:24:08.510943+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Editor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>29abf75f7265ccb45b799eac4ab0ca94</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_Preferences.cs</fileName>
+    <timeStamp>2018-07-03T17:24:08.5569281+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Preferences</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>67867a20919f7db45a2e7034fda1c28e</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_RenderModelEditor.cs</fileName>
+    <timeStamp>2018-07-03T17:24:08.6049128+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_RenderModelEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d2244eee8a3a4784fb40d1123ff69301</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_Settings.cs</fileName>
+    <timeStamp>2018-07-03T17:24:08.660895+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Settings</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>80087fbbf7bf93a46bb4aea276b19568</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_SkyboxEditor.cs</fileName>
+    <timeStamp>2018-07-03T17:24:08.7188794+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_SkyboxEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>73a0556bda803bf4e898751dcfcf21a8</guid>
+    <fileName>Assets/SteamVR/Editor/SteamVR_Update.cs</fileName>
+    <timeStamp>2018-07-03T17:24:08.7828548+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Update</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>501eb8b744f73714fbe7dbdd5e3ef66e</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_GazeTracker.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.2721422+02:00</timeStamp>
+    <typeFullName>
+      <string>GazeEventArgs</string>
+      <string>SteamVR_GazeTracker</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d4e8a839a7c5b7e4580c59e305fb5f01</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_LaserPointer.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.7619834+02:00</timeStamp>
+    <typeFullName>
+      <string>PointerEventArgs</string>
+      <string>SteamVR_LaserPointer</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>24c7d7d77dd0d2a4b8e1ad129b170ee3</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_Teleporter.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.4840746+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Teleporter</string>
+      <string>SteamVR_Teleporter+TeleportType</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ff4f36585e15b1942827390ff1a92502</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_TestThrow.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.2591461+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_TestThrow</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8b18b36a995ecb04599f35c2741be8d5</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_TestTrackedCamera.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.4574055+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_TestTrackedCamera</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7346a42905a29b347b1f492e8ad7b49f</guid>
+    <fileName>Assets/SteamVR/Extras/SteamVR_TrackedController.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.6513428+02:00</timeStamp>
+    <typeFullName>
+      <string>ClickedEventArgs</string>
+      <string>SteamVR_TrackedController</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1731d642c0b250b48bb8cdfb153d9792</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/BodyCollider.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.9259303+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.BodyCollider</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1f32883eed859804dbb0c5fedac91496</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/CircularDrive.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.9149342+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.CircularDrive</string>
+      <string>Valve.VR.InteractionSystem.CircularDrive+Axis_t</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ad77666522338cf49ba83b80b25e6476</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ComplexThrowable.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.0712069+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ComplexThrowable</string>
+      <string>Valve.VR.InteractionSystem.ComplexThrowable+AttachMode</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8ca2cc563cc33f542a5d9f8f661184ba</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ControllerHoverHighlight.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.3667879+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ControllerHoverHighlight</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5f3294e06115d0047a2ac7659a11b168</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/CustomEvents.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.7489876+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.CustomEvents</string>
+      <string>Valve.VR.InteractionSystem.CustomEvents+UnityEventHand</string>
+      <string>Valve.VR.InteractionSystem.CustomEvents+UnityEventSingleFloat</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6f3bba2c36dd79242b3157dbcd876bf2</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DebugUI.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.6403463+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.DebugUI</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5240357a2468cdc4291b266bee3cb9b9</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DestroyOnDetachedFromHand.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.7359921+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.DestroyOnDetachedFromHand</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>69cad530c565c714491a326c21accb90</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DestroyOnParticleSystemDeath.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.6283509+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.DestroyOnParticleSystemDeath</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7ba84888c9d4c504cb752a3904551a6c</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DestroyOnTriggerEnter.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.6173541+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.DestroyOnTriggerEnter</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>65ef702aaa09d3f46a75659678b1a711</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DistanceHaptics.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.6536957+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.DistanceHaptics</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4d1c07a6449b0ca439ee6fac5f6f7d83</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/DontDestroyOnLoad.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.7463121+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.DontDestroyOnLoad</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>88a2ccbdad9948c45b28f5e63902705b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/EnumFlags.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.2218349+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.EnumFlags</string>
+      <string>Valve.VR.InteractionSystem.EnumFlagsPropertyDrawer</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6043f3be9a21bd74281f9770463bea00</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/FallbackCameraController.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.5650474+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.FallbackCameraController</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>29e3e4511966ba94d8ba0b98c6c62f82</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Hand.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.3537922+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.Hand</string>
+      <string>Valve.VR.InteractionSystem.Hand+AttachedObject</string>
+      <string>Valve.VR.InteractionSystem.Hand+AttachmentFlags</string>
+      <string>Valve.VR.InteractionSystem.Hand+HandType</string>
+      <string>Valve.VR.InteractionSystem.HandEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>817521c5973e4ee45905ee97df3c38ad</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/HapticRack.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.4460859+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.HapticRack</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>eb6d6653511aff5409d0827d4e3b79ea</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/HideOnHandFocusLost.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.2381535+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.HideOnHandFocusLost</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f5a1be5da1c87864582d778e52de4e9b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/IgnoreHovering.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.6347019+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.IgnoreHovering</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c9e05292e0d62b542ac5bba92674a86d</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/InputModule.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.9762376+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.InputModule</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b93b6a877adcbf94c89a9d6e0c0e844d</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Interactable.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.2161603+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.Interactable</string>
+      <string>Valve.VR.InteractionSystem.Interactable+OnDetachedFromHandDelegate</string>
+      <string>Valve.VR.InteractionSystem.Interactable+OnAttachedToHandDelegate</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6948c755e9613734dbac166d770c8e3e</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/InteractableButtonEvents.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.9642418+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.InteractableButtonEvents</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c4153b26428ccf041950b92c057812a3</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/InteractableHoverEvents.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.6197061+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.InteractableHoverEvents</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c9f83db71b9a6764abf964ab7679f035</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ItemPackage.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.4617572+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ItemPackage</string>
+      <string>Valve.VR.InteractionSystem.ItemPackage+ItemPackageType</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>57468e6cbae21894fa42c90413c294ff</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ItemPackageReference.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.0808802+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ItemPackageReference</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>43e53a985809f0949b9a42cc2a6888c9</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/ItemPackageSpawner.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.7070031+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ItemPackageSpawner</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>49a60120b932b59409171f5ff611b639</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearAnimation.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.952246+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.LinearAnimation</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>634b98c3ef8bc6d4f834f80a4613a4a4</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearAnimator.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.6860083+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.LinearAnimator</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bb07dbf09f9933e49b22c82d8428c53b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearAudioPitch.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.5540516+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.LinearAudioPitch</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5a3622562855c9a40a14846ffdc8bfe4</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearBlendshape.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.0678844+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.LinearBlendshape</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>13d876e5d485004448f3e7b57eece9ab</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearDisplacement.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.8929416+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.LinearDisplacement</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8c81a27fd18a29444be92481fe681f4b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearDrive.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.0548889+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.LinearDrive</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>46f8e9e70f68ee3418ad85992778c116</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/LinearMapping.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.7343163+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.LinearMapping</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>202a6e24b48d1684398409c47161adcb</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Player.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.9332516+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.Player</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1a125d9df683e2a49b12babced273360</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/PlaySound.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.6033583+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.PlaySound</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7d623a50b67320940b97e93e31d0a21b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SeeThru.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.8809452+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.SeeThru</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0584375ad2f33ef4da0b276de8507487</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SleepOnAwake.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.3128057+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.SleepOnAwake</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f53662f45a4454944a06629fec9c941e</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SoundDeparent.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.0592108+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.SoundDeparent</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>32c1c9a5bbab2e54280027c0ecaf42db</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SoundPlayOneshot.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.1798484+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.SoundPlayOneshot</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6ad167161b0bf8e4d9c038db358e0a28</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SpawnAndAttachAfterControllerIsTracking.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.5913622+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.SpawnAndAttachAfterControllerIsTracking</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f4a03a51c550b92478a559cf694ce118</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SpawnAndAttachToHand.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.4454094+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.SpawnAndAttachToHand</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>9fb3fe54664b917489646492ee8c4993</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/SpawnRenderModel.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.2928122+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.SpawnRenderModel</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ffefbea063cab884ca33e5a449e5c22c</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Throwable.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.2031642+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.Throwable</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>53cd2ef2dd3d5d64e96af4420220d1d2</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/UIElement.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.9042609+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.UIElement</string>
+      <string>Valve.VR.InteractionSystem.UIElementEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ba42448c9a2fa44409034eead650b5f4</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Unparent.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.4497608+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.Unparent</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d4dbb95c6efc21548ac6d079a65a2d50</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/Util.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.5410552+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.Util</string>
+      <string>Valve.VR.InteractionSystem.AfterTimer_Component</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>783750eec4c41da428b7651515146d14</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Core/Scripts/VelocityEstimator.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.4367656+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.VelocityEstimator</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ea1001a6626353541ab4d4b39f4c3569</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Hints/Scripts/ControllerButtonHints.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.5947139+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ControllerButtonHints</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f2f2850d002f14a47bff32fdf73df53e</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/ArcheryTarget.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.4237695+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ArcheryTarget</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d520699ed41daaf48b924d994ac87378</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/Arrow.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.6740121+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.Arrow</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d85480da87762944399dab6c99985eef</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/ArrowHand.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.1911681+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ArrowHand</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f195fe0cc42f49241a3c7521a19fa350</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/ArrowheadRotation.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.5783664+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ArrowheadRotation</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>429a484b95998f84eaa98fa068caa5e9</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/Balloon.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.9789132+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.Balloon</string>
+      <string>Valve.VR.InteractionSystem.Balloon+BalloonColor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>667230ade3b20b641a0ba08bdfd760fc</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/BalloonColliders.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.0472147+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.BalloonColliders</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ec82b6ce2e2435444a434107cddceb0b</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/BalloonHapticBump.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.8932648+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.BalloonHapticBump</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>cc1b8e5b8c3365a49b0274fb637151d6</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/BalloonSpawner.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.4294149+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.BalloonSpawner</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>012bb97850e84ad4c890dcab506009bc</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/ExplosionWobble.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.6600173+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ExplosionWobble</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f86ab2e727cd09f43849955c5b35f490</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/FireSource.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.8679494+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.FireSource</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>30032368544f1a341976db391b260507</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/Longbow.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.5190623+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.Longbow</string>
+      <string>Valve.VR.InteractionSystem.Longbow+Handedness</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dc121f192dd724945a1998a9c1f1727d</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Longbow/Scripts/SoundBowClick.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.6480209+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.SoundBowClick</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>79e7ef0af37bbcb40ab89c4cc2481018</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/ControllerHintsExample.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.0362182+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ControllerHintsExample</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8bb563c4e716d2c4181e187d9be248db</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Samples/Scripts/InteractableExample.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.1578552+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.InteractableExample</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b8d4cc6cf300b3e4bb1411c4e041030c</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/AllowTeleportWhileAttachedToHand.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.1691758+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.AllowTeleportWhileAttachedToHand</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ebcc975aa3c1d5240936c86b600ca2a5</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/ChaperoneInfo.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.391104+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.ChaperoneInfo</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>dc3be917a80086a48b97933694257f09</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/IgnoreTeleportTrace.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.0252218+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.IgnoreTeleportTrace</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f260935093f73f241bfaa1578e5e5506</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.3761086+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.Teleport</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a043c731a29ecd745a9270fbf002ee68</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportArc.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.4184182+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.TeleportArc</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>84a4f15a3179f1d4993aded11f4d0232</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportArea.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.5367326+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.TeleportArea</string>
+      <string>Valve.VR.InteractionSystem.TeleportAreaEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c6bc348d47e14444f9ca466d8cf06d46</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportMarkerBase.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.0418931+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.TeleportMarkerBase</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e0135c95e70592e4fac2f29e7b78abcf</guid>
+    <fileName>Assets/SteamVR/InteractionSystem/Teleport/Scripts/TeleportPoint.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.5323813+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.InteractionSystem.TeleportPoint</string>
+      <string>Valve.VR.InteractionSystem.TeleportPoint+TeleportPointType</string>
+      <string>Valve.VR.InteractionSystem.TeleportPointEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8d26b9eddedb33d48be044bb268a57c7</guid>
+    <fileName>Assets/SteamVR/Plugins/openvr_api.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.8672729+02:00</timeStamp>
+    <typeFullName>
+      <string>Valve.VR.IVRSystem</string>
+      <string>Valve.VR.IVRExtendedDisplay</string>
+      <string>Valve.VR.IVRTrackedCamera</string>
+      <string>Valve.VR.IVRApplications</string>
+      <string>Valve.VR.IVRChaperone</string>
+      <string>Valve.VR.IVRChaperoneSetup</string>
+      <string>Valve.VR.IVRCompositor</string>
+      <string>Valve.VR.IVROverlay</string>
+      <string>Valve.VR.IVRRenderModels</string>
+      <string>Valve.VR.IVRNotifications</string>
+      <string>Valve.VR.IVRSettings</string>
+      <string>Valve.VR.IVRScreenshots</string>
+      <string>Valve.VR.IVRResources</string>
+      <string>Valve.VR.IVRDriverManager</string>
+      <string>Valve.VR.CVRSystem</string>
+      <string>Valve.VR.CVRExtendedDisplay</string>
+      <string>Valve.VR.CVRTrackedCamera</string>
+      <string>Valve.VR.CVRApplications</string>
+      <string>Valve.VR.CVRChaperone</string>
+      <string>Valve.VR.CVRChaperoneSetup</string>
+      <string>Valve.VR.CVRCompositor</string>
+      <string>Valve.VR.CVROverlay</string>
+      <string>Valve.VR.CVRRenderModels</string>
+      <string>Valve.VR.CVRNotifications</string>
+      <string>Valve.VR.CVRSettings</string>
+      <string>Valve.VR.CVRScreenshots</string>
+      <string>Valve.VR.CVRResources</string>
+      <string>Valve.VR.CVRDriverManager</string>
+      <string>Valve.VR.OpenVRInterop</string>
+      <string>Valve.VR.EVREye</string>
+      <string>Valve.VR.ETextureType</string>
+      <string>Valve.VR.EColorSpace</string>
+      <string>Valve.VR.ETrackingResult</string>
+      <string>Valve.VR.ETrackedDeviceClass</string>
+      <string>Valve.VR.ETrackedControllerRole</string>
+      <string>Valve.VR.ETrackingUniverseOrigin</string>
+      <string>Valve.VR.ETrackedDeviceProperty</string>
+      <string>Valve.VR.ETrackedPropertyError</string>
+      <string>Valve.VR.EVRSubmitFlags</string>
+      <string>Valve.VR.EVRState</string>
+      <string>Valve.VR.EVREventType</string>
+      <string>Valve.VR.EDeviceActivityLevel</string>
+      <string>Valve.VR.EVRButtonId</string>
+      <string>Valve.VR.EVRMouseButton</string>
+      <string>Valve.VR.EDualAnalogWhich</string>
+      <string>Valve.VR.EVRInputError</string>
+      <string>Valve.VR.EHiddenAreaMeshType</string>
+      <string>Valve.VR.EVRControllerAxisType</string>
+      <string>Valve.VR.EVRControllerEventOutputType</string>
+      <string>Valve.VR.ECollisionBoundsStyle</string>
+      <string>Valve.VR.EVROverlayError</string>
+      <string>Valve.VR.EVRApplicationType</string>
+      <string>Valve.VR.EVRFirmwareError</string>
+      <string>Valve.VR.EVRNotificationError</string>
+      <string>Valve.VR.EVRInitError</string>
+      <string>Valve.VR.EVRScreenshotType</string>
+      <string>Valve.VR.EVRScreenshotPropertyFilenames</string>
+      <string>Valve.VR.EVRTrackedCameraError</string>
+      <string>Valve.VR.EVRTrackedCameraFrameType</string>
+      <string>Valve.VR.EVRApplicationError</string>
+      <string>Valve.VR.EVRApplicationProperty</string>
+      <string>Valve.VR.EVRApplicationTransitionState</string>
+      <string>Valve.VR.ChaperoneCalibrationState</string>
+      <string>Valve.VR.EChaperoneConfigFile</string>
+      <string>Valve.VR.EChaperoneImportFlags</string>
+      <string>Valve.VR.EVRCompositorError</string>
+      <string>Valve.VR.EVRCompositorTimingMode</string>
+      <string>Valve.VR.VROverlayInputMethod</string>
+      <string>Valve.VR.VROverlayTransformType</string>
+      <string>Valve.VR.VROverlayFlags</string>
+      <string>Valve.VR.VRMessageOverlayResponse</string>
+      <string>Valve.VR.EGamepadTextInputMode</string>
+      <string>Valve.VR.EGamepadTextInputLineMode</string>
+      <string>Valve.VR.EOverlayDirection</string>
+      <string>Valve.VR.EVROverlayIntersectionMaskPrimitiveType</string>
+      <string>Valve.VR.EVRRenderModelError</string>
+      <string>Valve.VR.EVRComponentProperty</string>
+      <string>Valve.VR.EVRNotificationType</string>
+      <string>Valve.VR.EVRNotificationStyle</string>
+      <string>Valve.VR.EVRSettingsError</string>
+      <string>Valve.VR.EVRScreenshotError</string>
+      <string>Valve.VR.VREvent_Data_t</string>
+      <string>Valve.VR.VROverlayIntersectionMaskPrimitive_Data_t</string>
+      <string>Valve.VR.HmdMatrix34_t</string>
+      <string>Valve.VR.HmdMatrix44_t</string>
+      <string>Valve.VR.HmdVector3_t</string>
+      <string>Valve.VR.HmdVector4_t</string>
+      <string>Valve.VR.HmdVector3d_t</string>
+      <string>Valve.VR.HmdVector2_t</string>
+      <string>Valve.VR.HmdQuaternion_t</string>
+      <string>Valve.VR.HmdColor_t</string>
+      <string>Valve.VR.HmdQuad_t</string>
+      <string>Valve.VR.HmdRect2_t</string>
+      <string>Valve.VR.DistortionCoordinates_t</string>
+      <string>Valve.VR.Texture_t</string>
+      <string>Valve.VR.TrackedDevicePose_t</string>
+      <string>Valve.VR.VRTextureBounds_t</string>
+      <string>Valve.VR.VRTextureWithPose_t</string>
+      <string>Valve.VR.VRTextureDepthInfo_t</string>
+      <string>Valve.VR.VRTextureWithDepth_t</string>
+      <string>Valve.VR.VRTextureWithPoseAndDepth_t</string>
+      <string>Valve.VR.VRVulkanTextureData_t</string>
+      <string>Valve.VR.D3D12TextureData_t</string>
+      <string>Valve.VR.VREvent_Controller_t</string>
+      <string>Valve.VR.VREvent_Mouse_t</string>
+      <string>Valve.VR.VREvent_Scroll_t</string>
+      <string>Valve.VR.VREvent_TouchPadMove_t</string>
+      <string>Valve.VR.VREvent_Notification_t</string>
+      <string>Valve.VR.VREvent_Process_t</string>
+      <string>Valve.VR.VREvent_Overlay_t</string>
+      <string>Valve.VR.VREvent_Status_t</string>
+      <string>Valve.VR.VREvent_Keyboard_t</string>
+      <string>Valve.VR.VREvent_Ipd_t</string>
+      <string>Valve.VR.VREvent_Chaperone_t</string>
+      <string>Valve.VR.VREvent_Reserved_t</string>
+      <string>Valve.VR.VREvent_PerformanceTest_t</string>
+      <string>Valve.VR.VREvent_SeatedZeroPoseReset_t</string>
+      <string>Valve.VR.VREvent_Screenshot_t</string>
+      <string>Valve.VR.VREvent_ScreenshotProgress_t</string>
+      <string>Valve.VR.VREvent_ApplicationLaunch_t</string>
+      <string>Valve.VR.VREvent_EditingCameraSurface_t</string>
+      <string>Valve.VR.VREvent_MessageOverlay_t</string>
+      <string>Valve.VR.VREvent_Property_t</string>
+      <string>Valve.VR.VREvent_DualAnalog_t</string>
+      <string>Valve.VR.VREvent_HapticVibration_t</string>
+      <string>Valve.VR.VREvent_t</string>
+      <string>Valve.VR.VREvent_t_Packed</string>
+      <string>Valve.VR.HiddenAreaMesh_t</string>
+      <string>Valve.VR.VRControllerAxis_t</string>
+      <string>Valve.VR.VRControllerState_t</string>
+      <string>Valve.VR.VRControllerState_t_Packed</string>
+      <string>Valve.VR.Compositor_OverlaySettings</string>
+      <string>Valve.VR.CameraVideoStreamFrameHeader_t</string>
+      <string>Valve.VR.DriverDirectMode_FrameTiming</string>
+      <string>Valve.VR.AppOverrideKeys_t</string>
+      <string>Valve.VR.Compositor_FrameTiming</string>
+      <string>Valve.VR.Compositor_CumulativeStats</string>
+      <string>Valve.VR.VROverlayIntersectionParams_t</string>
+      <string>Valve.VR.VROverlayIntersectionResults_t</string>
+      <string>Valve.VR.IntersectionMaskRectangle_t</string>
+      <string>Valve.VR.IntersectionMaskCircle_t</string>
+      <string>Valve.VR.VROverlayIntersectionMaskPrimitive_t</string>
+      <string>Valve.VR.RenderModel_ComponentState_t</string>
+      <string>Valve.VR.RenderModel_Vertex_t</string>
+      <string>Valve.VR.RenderModel_TextureMap_t</string>
+      <string>Valve.VR.RenderModel_TextureMap_t_Packed</string>
+      <string>Valve.VR.RenderModel_t</string>
+      <string>Valve.VR.RenderModel_t_Packed</string>
+      <string>Valve.VR.RenderModel_ControllerMode_State_t</string>
+      <string>Valve.VR.NotificationBitmap_t</string>
+      <string>Valve.VR.COpenVRContext</string>
+      <string>Valve.VR.OpenVR</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7fae0ddab09ac324c85494471274d6a4</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.8429572+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6bca9ccf900ccc84c887d783321d27e2</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Camera.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.6350248+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Camera</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f5be45115742b07478e21c85fcc233ec</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_CameraFlip.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.1468588+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_CameraFlip</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5828f252c3c228f4b931f66c21e525c4</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_CameraMask.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.8179652+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_CameraMask</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f9c6e0c408020c341b3c329ec30355a1</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Controller.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.9599199+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Controller</string>
+      <string>SteamVR_Controller+DeviceRelation</string>
+      <string>SteamVR_Controller+Device</string>
+      <string>SteamVR_Controller+ButtonMask</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e3b47c2980b93bc48844a54641dab5b8</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_ControllerManager.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.508389+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_ControllerManager</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>49a86c1078ce4314b9c4224560e031b9</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Ears.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.1561794+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Ears</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>44cb57742f235524189e5d8af1c4f3cc</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Events.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.2718187+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Events</string>
+      <string>SteamVR_Events+Event`3</string>
+      <string>SteamVR_Events+Event`2</string>
+      <string>SteamVR_Events+Event`1</string>
+      <string>SteamVR_Events+Event</string>
+      <string>SteamVR_Events+Action`3</string>
+      <string>SteamVR_Events+Action`2</string>
+      <string>SteamVR_Events+Action`1</string>
+      <string>SteamVR_Events+ActionNoArgs</string>
+      <string>SteamVR_Events+Action</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c9da270df5147d24597cc106058c1fa7</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_ExternalCamera.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.354116+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_ExternalCamera</string>
+      <string>SteamVR_ExternalCamera+Config</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2ad1e469d4e3e04489f9a36419f1a4f8</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Fade.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.1251898+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Fade</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b2d1785fa0c551e408b6c94398847b76</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Frustum.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.510741+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Frustum</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>be96d45fe21847a4a805d408a8015c84</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_GameView.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.8412813+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_GameView</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ea22dba3baf2ecc4d886bf2444444228</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_IK.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.3301238+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_IK</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a5a6a70209b6e6345bfe18b02314a54e</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_LoadLevel.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.6140319+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_LoadLevel</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e7afc8c74d1f73b458705e0b946292a0</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Menu.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.3964253+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Menu</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>46fe9e0b23166454c8cb73040321d78c</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Overlay.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.8049698+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Overlay</string>
+      <string>SteamVR_Overlay+IntersectionResults</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1f0522eaef74d984591c060d05a095c8</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_PlayArea.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.1704981+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_PlayArea</string>
+      <string>SteamVR_PlayArea+Size</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e979227f3384fac4b8ca0b3550bf005c</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Render.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.8302849+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Render</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5890e3cad70bea64d91aef9145ba3454</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_RenderModel.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.7143234+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_RenderModel</string>
+      <string>SteamVR_RenderModel+RenderModelInterfaceHolder</string>
+      <string>SteamVR_RenderModel+RenderModel</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>13a43e992568b8e48b4bd489b9d96f40</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Skybox.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.5737213+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Skybox</string>
+      <string>SteamVR_Skybox+CellSize</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7f4097fabec5d2b4da2b861750319952</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_SphericalProjection.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.2448274+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_SphericalProjection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8c3faa610c019764a81eb8497109e2d4</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Stats.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.1178682+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Stats</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0811e240274b8ea4a8469e82b86747b4</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_TestController.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.3171276+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_TestController</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>55da3adbb5d30254c97687991608dda0</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_TrackedCamera.cs</fileName>
+    <timeStamp>2018-07-05T15:51:35.805293+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_TrackedCamera</string>
+      <string>SteamVR_TrackedCamera+VideoStreamTexture</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d37c2cf88f7c59f4c8cf5d3812568143</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_TrackedObject.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.5597258+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_TrackedObject</string>
+      <string>SteamVR_TrackedObject+EIndex</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b61cd59d8f02e454186a61a5f55c21b9</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_UpdatePoses.cs</fileName>
+    <timeStamp>2018-07-05T15:51:37.4987452+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_UpdatePoses</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>be3c3a084f7b29b4880b42b4cfbf4d8f</guid>
+    <fileName>Assets/SteamVR/Scripts/SteamVR_Utils.cs</fileName>
+    <timeStamp>2018-07-05T15:51:36.591039+02:00</timeStamp>
+    <typeFullName>
+      <string>SteamVR_Utils</string>
+      <string>SteamVR_Utils+SystemFn</string>
+      <string>SteamVR_Utils+RigidTransform</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+</ArrayOfTypeDate>

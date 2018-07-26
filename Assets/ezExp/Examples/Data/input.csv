@@ -6,7 +6,7 @@ Participant,Practice,Block,Trial,Property,Ratio,Size1
 0,false,2,1,Length,0.48,1
 0,false,2,2,Length,0.63,1
 0,false,3,0,Area,0.13,1
-0,false,3,1,Area,0.63,0.6
+0,false,3,1,Area,0.63,1
 0,false,3,2,Area,0.58,1
 1,false,1,0,Area,0.18,1
 1,false,1,1,Area,0.48,1

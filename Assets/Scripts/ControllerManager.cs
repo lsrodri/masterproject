@@ -108,8 +108,8 @@ public class ControllerManager : MonoBehaviour {
             }
             
             userResponse = (int)System.Math.Round(tempUserResponse, System.MidpointRounding.AwayFromZero);
-            outputUserResponse.text = userResponse.ToString() + "%";
-            outputConfirmation.text = userResponse.ToString() + "%";
+            outputUserResponse.text = userResponse.ToString();
+            // outputConfirmation.text = userResponse.ToString() + "%";
             PlayerPrefs.SetInt("userResponse", userResponse);
         }
         else if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
@@ -200,6 +200,7 @@ public class ControllerManager : MonoBehaviour {
         //trialTime = Time.time - tempTime;
         tempTime = Time.time;
 
+        // Variating the left (larger) stimulus by + or - 5%
         leftStimuliVariation = ((int)UnityEngine.Random.Range(95, 105) * 0.01f);
         size1Output = leftStimuliVariation * size1;
 
@@ -224,13 +225,13 @@ public class ControllerManager : MonoBehaviour {
         if (property == "Length")
         {
             // Scale used by this property to fit the paper and make the right positioning possible
-            propertySize = 0.4f;
+            propertySize = 0.35f;
 
             widthAdjusted = propertySize * 1.2f;
             calculatedLeftSize = propertySize * size1Output;
             calculatedRightSize = calculatedLeftSize * ratio;
 
-            float[] stimulusZPos = { -0.095f, -0.20f };
+            float[] stimulusZPos = { -0.140f, -0.062f };
             float leftStimulusZ = stimulusZPos[invertedBoolInt];
             
             // Inverting the boolean above to position right stimulus differently from its left counterpart
@@ -239,13 +240,13 @@ public class ControllerManager : MonoBehaviour {
 
             leftSpriteRenderer.sprite = lenghtSprite;
             leftStimulus.transform.localScale = new Vector3(widthAdjusted, calculatedLeftSize, widthAdjusted);
-            leftStimulus.transform.localPosition = new Vector3(0.048f, 0.012f, leftStimulusZ);
+            leftStimulus.transform.localPosition = new Vector3(0.048f, 0.002f, leftStimulusZ);
                       
             rightStimulusZ = RandomUnalignedZPos(leftStimulusZ, rightStimulusZ, calculatedLeftSize, calculatedRightSize);
 
             rightSpriteRenderer.sprite = lenghtSprite;
             rightStimulus.transform.localScale = new Vector3(widthAdjusted, calculatedRightSize, widthAdjusted);
-            rightStimulus.transform.localPosition = new Vector3(-0.164f, 0.012f, rightStimulusZ);
+            rightStimulus.transform.localPosition = new Vector3(-0.164f, 0.002f, rightStimulusZ);
 
             horizontalBar.SetActive(false);
 
@@ -255,7 +256,7 @@ public class ControllerManager : MonoBehaviour {
             calculatedLeftSize = propertySize * size1Output;
             calculatedRightSize = calculatedLeftSize * ratio;
 
-            float[] stimulusZPos = { 0.063f, -0.193f };
+            float[] stimulusZPos = { -0.141f, 0.118f };
             float leftStimulusZ = stimulusZPos[invertedBoolInt];
 
             // Inverting the boolean above to position right stimulus differently from its left counterpart
@@ -264,13 +265,13 @@ public class ControllerManager : MonoBehaviour {
 
             leftSpriteRenderer.sprite = areaSprite;
             leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
-            leftStimulus.transform.localPosition = new Vector3(0.045f, 0.012f, leftStimulusZ);
+            leftStimulus.transform.localPosition = new Vector3(0.048f, 0.002f, leftStimulusZ);
 
             rightStimulusZ = RandomUnalignedZPos(leftStimulusZ, rightStimulusZ, calculatedLeftSize, calculatedRightSize);
 
             rightSpriteRenderer.sprite = areaSprite;
             rightStimulus.transform.localScale = new Vector3(calculatedRightSize, calculatedRightSize, calculatedRightSize);
-            rightStimulus.transform.localPosition = new Vector3(-0.16f, 0.012f, rightStimulusZ);
+            rightStimulus.transform.localPosition = new Vector3(-0.157f, 0.002f, rightStimulusZ);
 
             horizontalBar.SetActive(false);
 
@@ -282,7 +283,7 @@ public class ControllerManager : MonoBehaviour {
 
             leftSpriteRenderer.sprite = barSprite;
             leftStimulus.transform.localScale = new Vector3(propertySize, calculatedLeftSize, propertySize);
-            leftStimulus.transform.localPosition = new Vector3(-0.1f, 0.012f, 0.286f);
+            leftStimulus.transform.localPosition = new Vector3(-0.1f, 0.002f, 0.312f);
             
 
             rightSpriteRenderer.sprite = barSprite;
@@ -291,7 +292,7 @@ public class ControllerManager : MonoBehaviour {
             // Calculating the right bar position to align bars to the bottom
             rightBarZ = (System.Math.Abs(calculatedLeftSize - calculatedRightSize) / 2) + 0.063f;
 
-            rightStimulus.transform.localPosition = new Vector3(-0.273f, 0.012f, 0.286f);
+            rightStimulus.transform.localPosition = new Vector3(-0.278f, 0.002f, 0.312f);
 
             horizontalBar.SetActive(true);
         }     
