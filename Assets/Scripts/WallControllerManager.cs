@@ -29,6 +29,8 @@ public class WallControllerManager : MonoBehaviour {
     public GameObject cameraEye;
     public GameObject canvases;
     public GameObject sphere;
+    public GameObject preNextTrial;
+    public GameObject stimuliWall;
     public Sprite lenghtSprite;
     public Sprite areaSprite;
     public Sprite barSprite;
@@ -47,6 +49,9 @@ public class WallControllerManager : MonoBehaviour {
     private float size1;
     private float participantAngle;
     private bool invertingBoolean = true;
+    private bool visibilityConfirmed = false;
+    private Camera cam;
+    private float headToWallDistance = 0; 
 
     RunExperiment _runExperiment;
 
@@ -57,16 +62,12 @@ public class WallControllerManager : MonoBehaviour {
         PlayerPrefs.SetInt("userResponse", 50);
         userResponse = PlayerPrefs.GetInt("userResponse");
         currentUserId = PlayerPrefs.GetString("participant");
-        //Debug.Log(cameraEye.transform.position);
-        
+        cam = cameraEye.GetComponent<Camera>();
     }
     void Update()
     {
         device = SteamVR_Controller.Input((int)trackedObject.index);
         float controllerValue = device.GetAxis().y;
-
-        Vector2 dir = new Vector2(stimulusPaper.transform.position.x, stimulusPaper.transform.position.z) - new Vector2(cameraEye.transform.position.x, cameraEye.transform.position.z);
-        cameraStimuliAngle.text = "Camera-Stimuli Angle: " + (System.Math.Abs(Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg));
 
         if (device.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
         {
@@ -74,9 +75,11 @@ public class WallControllerManager : MonoBehaviour {
             if (userHasEstimated == false)
             {
                 // Getting participant angle on the moment they answer
-                /*Vector2 dir = new Vector2(stimulusPaper.transform.position.x, stimulusPaper.transform.position.z) - new Vector2(cameraEye.transform.position.x, cameraEye.transform.position.z);
+                Vector2 dir = new Vector2(stimulusPaper.transform.position.x, stimulusPaper.transform.position.z) - new Vector2(cameraEye.transform.position.x, cameraEye.transform.position.z);
                 var forward = new Vector2(cameraEye.transform.forward.x, cameraEye.transform.forward.z);
-                participantAngle = System.Math.Abs(Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);*/
+                participantAngle = System.Math.Abs(Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);
+
+                headToWallDistance = cameraEye.transform.position.z - stimuliWall.transform.position.z;
 
                 // Flag that user has entered a value for this trial
                 userHasEstimated = true;
@@ -139,7 +142,8 @@ public class WallControllerManager : MonoBehaviour {
                     SetResults(
                         PlayerPrefs.GetInt("userResponse"),
                         trialTime,
-                        participantAngle
+                        participantAngle,
+                        headToWallDistance
                     );
 
                     NextTrial();
@@ -151,7 +155,23 @@ public class WallControllerManager : MonoBehaviour {
         }
     }
 
-    public void StartExperiment(string userID, int trialID, int startWith, bool skipTraining, bool forceAvatar = false)
+    void FixedUpdate()
+    {
+        if (!visibilityConfirmed)
+        {
+            // Checking if stimuli is currently visible for the VR camera
+            Vector3 screenPoint = cam.WorldToViewportPoint(stimuliBundle.transform.position);
+            if (screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1)
+            {
+                // Confirming visibility to stop this from running during update
+                visibilityConfirmed = true;
+                // Updating chronometer starting time from the moment the stimuli becomes visible
+                tempTime = Time.time;
+            }
+        }
+
+    }
+        public void StartExperiment(string userID, int trialID, int startWith, bool skipTraining, bool forceAvatar = false)
     {
 
         _experiment = new Experiment(inputDataPath, userID, trialID, "Participant");
@@ -183,10 +203,10 @@ public class WallControllerManager : MonoBehaviour {
         catch (AllTrialsPerformedException e)
         {
             ExperienceFinished();
-            return; //info temporary
+            return;
         }
 
-        // REading values from the CSV : 
+        // Reading values from the CSV : 
         float ratio = float.Parse(_experiment.GetParameterData("Ratio"));
         string property = _experiment.GetParameterData("Property");
         string orientation = _experiment.GetParameterData("Orientation");
@@ -198,11 +218,14 @@ public class WallControllerManager : MonoBehaviour {
         float calculatedLeftSize;
         //float[] stimulusZPos = new float[2];
         int invertedBoolInt;
+        visibilityConfirmed = false;
 
         _experiment.StartTrial();
         currentTrialIndex = _experiment.GetCurrentTrialIndex();
 
-        //trialTime = Time.time - tempTime;
+        /* This variable holds the time when a new trial started
+         * it is reassigned on the FixedUpdate method with the time a participant sees the stimuli
+        */
         tempTime = Time.time;
 
         leftStimuliVariation = ((int)UnityEngine.Random.Range(95, 105) * 0.01f);
@@ -227,29 +250,32 @@ public class WallControllerManager : MonoBehaviour {
 
         switch (inputPosition)
         {
-            case 150:
-                stimuliBundle.transform.position = new Vector3(2.8255f, 1.3f, -5.57299f);
+            case 0:
+                stimuliBundle.transform.position = new Vector3(3.4f, 1.3f, -5.57617f);
+
+                canvases.transform.localPosition = new Vector3(3.332f, 1.605f, -5.2541f);
+                canvases.transform.localRotation = Quaternion.Euler(0, 180f, 0);
+                canvases.transform.localScale = new Vector3(0.3369711f, 0.3369711f, 0.4813873f);
                 break;
-            case 155:
-                stimuliBundle.transform.position = new Vector3(2.6f, 1.3f, -5.57299f);
+            case 1:
+                stimuliBundle.transform.position = new Vector3(0.648f, 1.3f, -5.57617f);
+
+                canvases.transform.localPosition = new Vector3(-2.7052f, 1.3292f, -4.847f);
+                canvases.transform.localRotation = Quaternion.Euler(0, -90f, 0);
+                canvases.transform.localScale = new Vector3(0.7077155f, 0.7077155f, 1.011023f);
                 break;
-            case 160:
-                stimuliBundle.transform.position = new Vector3(2.27f, 1.3f, -5.57299f);
-                break;
-            case 165:
-                stimuliBundle.transform.position = new Vector3(1.737f, 1.3f, -5.57299f);
-                break;
-            case 170:
-                stimuliBundle.transform.position = new Vector3(0.68f, 1.3f, -5.57299f);
-                break;
-            case 175:
-                stimuliBundle.transform.position = new Vector3(-2.5f, 1.3f, -5.57299f);
+            case 2:
+                stimuliBundle.transform.position = new Vector3(-1.416f, 1.3f, -5.57617f);
+
+                canvases.transform.localPosition = new Vector3(-2.7052f, 1.3292f, -4.847f);
+                canvases.transform.localRotation = Quaternion.Euler(0, -90f, 0);
+                canvases.transform.localScale = new Vector3(0.7077155f, 0.7077155f, 1.011023f);
                 break;
             default:
                 Console.WriteLine("inputPosition not in switch case list");
                 break;
         }
-        
+
         if (orientation == "vertical")
         {
             stimuliBundle.transform.localRotation = Quaternion.Euler(90f, 0, 0);
@@ -295,8 +321,8 @@ public class WallControllerManager : MonoBehaviour {
             leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
             horizontalBar.SetActive(true);
 
-            leftStimulus.transform.localPosition = new Vector3(-0.1f, 0.011f, 0.312f);
-            rightStimulus.transform.localPosition = new Vector3(-0.278f, 0.011f, 0.312f);
+            leftStimulus.transform.localPosition = new Vector3(-0.094f, 0.012f, 0.243f);
+            rightStimulus.transform.localPosition = new Vector3(-0.2663f, 0.012f, 0.243f);
 
 
             rightSpriteRenderer.sprite = barSprite;
@@ -315,18 +341,13 @@ public class WallControllerManager : MonoBehaviour {
     }
 
 
-    public void SetResults(int response, float CompletionTime, float participantAngle)
+    public void SetResults(int response, float CompletionTime, float participantAngle, float headToWallDistance)
     {
         // The result data correspond to _experiment.SetResultsHeader
-        // Participant,Trial,Ratio,Property,Answer,CompletionTime
-
-        /*_experiment.SetResultData("Participant", currentUserId);
-        _experiment.SetResultData("Trial", currentTrialIndex.ToString());
-        _experiment.SetResultData("Ratio", ratio.ToString());
-        _experiment.SetResultData("Property", property);*/
         _experiment.SetResultData("Answer", response.ToString());
         _experiment.SetResultData("CompletionTime", CompletionTime.ToString());
         _experiment.SetResultData("ParticipantAngle", participantAngle.ToString());
+        _experiment.SetResultData("headToWallDistance", headToWallDistance.ToString()); 
 
         _experiment.EndTrial();
     }
@@ -349,7 +370,7 @@ public class WallControllerManager : MonoBehaviour {
     public float RandomUnalignedZPos(float leftStimulusZ, float rightStimulusZ, float calculatedLeftSize, float calculatedRightSize)
     {
         /* Checking if position needs to be randomized in case the bottom of the right stimulus
-             * is within .01f of the bottom of the left stimulus
+             * is within .02f of the bottom of the left stimulus
              * loop will run until the right stimulus gets out of that range
              * which will happen by changing the z position of the right stimulus
         */
@@ -361,7 +382,6 @@ public class WallControllerManager : MonoBehaviour {
         {
             rightStimulusZ = UnityEngine.Random.Range(rightStimulusZ, leftStimulusZ);
             rightStimulusZBottom = rightStimulusZ + calculatedRightSize;
-            Debug.Log("z position randomized");
         }
 
         return rightStimulusZ;
