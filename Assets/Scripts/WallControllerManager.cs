@@ -117,7 +117,6 @@ public class WallControllerManager : MonoBehaviour {
             
             userResponse = (int)System.Math.Round(tempUserResponse, System.MidpointRounding.AwayFromZero);
             outputUserResponse.text = userResponse.ToString();
-            //outputConfirmation.text = userResponse.ToString() + "%";
             PlayerPrefs.SetInt("userResponse", userResponse);
         }
         else if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
@@ -195,7 +194,7 @@ public class WallControllerManager : MonoBehaviour {
 
     public void NextTrial()
     {
-        // We try to load the next trial variables
+        // Trying to load the next trial variables
         try
         {
             Trial t = _experiment.LoadNextTrial();
@@ -208,15 +207,11 @@ public class WallControllerManager : MonoBehaviour {
 
         // Reading values from the CSV : 
         float ratio = float.Parse(_experiment.GetParameterData("Ratio"));
-        string property = _experiment.GetParameterData("Property");
         string orientation = _experiment.GetParameterData("Orientation");
         int inputPosition = int.Parse(_experiment.GetParameterData("Position")); 
-        float propertySize;
         float calculatedRightSize;
         float rightBarZ;
-        float widthAdjusted;
         float calculatedLeftSize;
-        //float[] stimulusZPos = new float[2];
         int invertedBoolInt;
         visibilityConfirmed = false;
 
@@ -260,14 +255,14 @@ public class WallControllerManager : MonoBehaviour {
             case 1:
                 stimuliBundle.transform.position = new Vector3(0.648f, 1.3f, -5.57617f);
 
-                canvases.transform.localPosition = new Vector3(-2.7052f, 1.3292f, -4.847f);
+                canvases.transform.localPosition = new Vector3(-2.7052f, 1.3292f, -5f);
                 canvases.transform.localRotation = Quaternion.Euler(0, -90f, 0);
                 canvases.transform.localScale = new Vector3(0.7077155f, 0.7077155f, 1.011023f);
                 break;
             case 2:
                 stimuliBundle.transform.position = new Vector3(-1.416f, 1.3f, -5.57617f);
 
-                canvases.transform.localPosition = new Vector3(-2.7052f, 1.3292f, -4.847f);
+                canvases.transform.localPosition = new Vector3(-2.7052f, 1.3292f, -5f);
                 canvases.transform.localRotation = Quaternion.Euler(0, -90f, 0);
                 canvases.transform.localScale = new Vector3(0.7077155f, 0.7077155f, 1.011023f);
                 break;
@@ -284,54 +279,23 @@ public class WallControllerManager : MonoBehaviour {
         {
             stimuliBundle.transform.localRotation = Quaternion.Euler(180f, -90, -90f);
         }
+        
+        calculatedLeftSize = 0.4f;
+        calculatedRightSize = calculatedLeftSize * ratio;
 
-        if (property == "Area")
-        {
+        leftSpriteRenderer.sprite = barSprite;
+        leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
+        horizontalBar.SetActive(true);
 
-            //stimuliBundle.transform.rotation = Quaternion.Euler(90f, 0, 0);
-
-            calculatedLeftSize = 0.2f;
-            calculatedRightSize = calculatedLeftSize * ratio;
-
-            float[] stimulusZPos = { 0.063f, -0.193f };
-            float leftStimulusZ = stimulusZPos[invertedBoolInt];
-
-            // Inverting the boolean above to position right stimulus differently from its left counterpart
-            int invertedInt = System.Math.Abs(1 - invertedBoolInt);
-            float rightStimulusZ = stimulusZPos[invertedInt];
-
-            leftSpriteRenderer.sprite = areaSprite;
-            leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
-            leftStimulus.transform.localPosition = new Vector3(0.045f, 0.012f, leftStimulusZ);
-
-            rightStimulusZ = RandomUnalignedZPos(leftStimulusZ, rightStimulusZ, calculatedLeftSize, calculatedRightSize);
-
-            rightSpriteRenderer.sprite = areaSprite;
-            rightStimulus.transform.localScale = new Vector3(calculatedRightSize, calculatedRightSize, calculatedRightSize);
-            rightStimulus.transform.localPosition = new Vector3(-0.16f, 0.012f, rightStimulusZ);
-
-            horizontalBar.SetActive(false);
-
-        } else if (property == "BarChart")
-        {
-            calculatedLeftSize = 0.4f;
-            calculatedRightSize = calculatedLeftSize * ratio;
-
-            leftSpriteRenderer.sprite = barSprite;
-            leftStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedLeftSize, calculatedLeftSize);
-            horizontalBar.SetActive(true);
-
-            leftStimulus.transform.localPosition = new Vector3(-0.094f, 0.012f, 0.243f);
-            rightStimulus.transform.localPosition = new Vector3(-0.2663f, 0.012f, 0.243f);
+        leftStimulus.transform.localPosition = new Vector3(-0.094f, 0.012f, 0.243f);
+        rightStimulus.transform.localPosition = new Vector3(-0.2663f, 0.012f, 0.243f);
 
 
-            rightSpriteRenderer.sprite = barSprite;
-            rightStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedRightSize, calculatedLeftSize);
+        rightSpriteRenderer.sprite = barSprite;
+        rightStimulus.transform.localScale = new Vector3(calculatedLeftSize, calculatedRightSize, calculatedLeftSize);
 
-            // Calculating the right bar position to align bars to the bottom
-            rightBarZ = (System.Math.Abs(calculatedLeftSize - calculatedRightSize) / 2) + 0.063f;
-            
-        }     
+        // Calculating the right bar position to align bars to the bottom
+        rightBarZ = (System.Math.Abs(calculatedLeftSize - calculatedRightSize) / 2) + 0.063f;
 
     }
 
@@ -359,13 +323,6 @@ public class WallControllerManager : MonoBehaviour {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
-
-    public void RandomResults()
-    {
-        //SetResults((int)Random.Range(0, 100), Random.Range(0, 1));
-    }
-
-    public void ApplicationStop() { }
 
     public float RandomUnalignedZPos(float leftStimulusZ, float rightStimulusZ, float calculatedLeftSize, float calculatedRightSize)
     {

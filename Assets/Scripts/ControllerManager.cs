@@ -109,7 +109,6 @@ public class ControllerManager : MonoBehaviour {
             
             userResponse = (int)System.Math.Round(tempUserResponse, System.MidpointRounding.AwayFromZero);
             outputUserResponse.text = userResponse.ToString();
-            // outputConfirmation.text = userResponse.ToString() + "%";
             PlayerPrefs.SetInt("userResponse", userResponse);
         }
         else if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
@@ -156,7 +155,6 @@ public class ControllerManager : MonoBehaviour {
         _experiment.SetOutputFilePath(outputFilePath);
 
         // This is the results you want 
-        //_experiment.SetResultsHeader(new string[] { "Participant","Trial","Ratio","Property","Answer", "size1Output" });
         _experiment.SetResultsHeader(new string[] { "Answer", "size1Output", "headPosition", "headRotation", "eyeStimuliAngle" });
 
         Debug.Log("Output path : <color=#E91E63>" + outputFilePath + "</color>");
@@ -185,26 +183,19 @@ public class ControllerManager : MonoBehaviour {
         // Reading values from the CSV : 
         float ratio = float.Parse(_experiment.GetParameterData("Ratio"));
         string property = _experiment.GetParameterData("Property");
-        size1 = float.Parse(_experiment.GetParameterData("Size1"));
         float propertySize;
         float calculatedRightSize;
         float rightBarZ;
         float widthAdjusted;
         float calculatedLeftSize;
-        //float[] stimulusZPos = new float[2];
         int invertedBoolInt;
 
         _experiment.StartTrial();
         currentTrialIndex = _experiment.GetCurrentTrialIndex();
-
-        //trialTime = Time.time - tempTime;
         tempTime = Time.time;
 
         // Variating the left (larger) stimulus by + or - 5%
-        leftStimuliVariation = ((int)UnityEngine.Random.Range(95, 105) * 0.01f);
-        size1Output = leftStimuliVariation * size1;
-
-        Debug.Log(currentTrialIndex);
+        size1Output = ((int)UnityEngine.Random.Range(95, 105) * 0.01f);
 
         leftSpriteRenderer = leftStimulus.GetComponent<SpriteRenderer>();
         rightSpriteRenderer = rightStimulus.GetComponent<SpriteRenderer>();
@@ -308,8 +299,6 @@ public class ControllerManager : MonoBehaviour {
     public void SetResults(int response, float size1Output, string headPosition, string headRotation, float eyeStimuliAngle)
     {
         // The result data correspond to _experiment.SetResultsHeader
-        // Participant,Trial,Ratio,Property,Answer,CompletionTime
-
         _experiment.SetResultData("Answer", response.ToString());
         _experiment.SetResultData("size1Output", size1Output.ToString());
         _experiment.SetResultData("headPosition", headPosition);
@@ -326,13 +315,6 @@ public class ControllerManager : MonoBehaviour {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
-
-    public void RandomResults()
-    {
-        //SetResults((int)Random.Range(0, 100), Random.Range(0, 1));
-    }
-
-    public void ApplicationStop() { }
 
     public float RandomUnalignedZPos(float leftStimulusZ, float rightStimulusZ, float calculatedLeftSize, float calculatedRightSize)
     {
