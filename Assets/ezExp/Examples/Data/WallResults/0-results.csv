@@ -19,3 +19,9 @@ Participant,Practice,Block,Trial,Ratio,Position,Orientation,Answer,CompletionTim
 0,false,2,0,0.58,0,horizontal,61,41.8831,80.70299,43171.39
 0,false,2,1,0.48,1,horizontal,51,10.43062,165.0195,11147.52
 0,false,2,2,0.78,2,horizontal,85,16.02611,171.0715,16028.83
+0,false,1,0,0.48,0,vertical,42,92.26968,90.32694,92273.95
+0,false,1,1,0.28,1,vertical,28,21.08534,166.1038,38926.79
+0,false,1,2,0.88,2,vertical,85,20.29433,171.9136,20297.88
+0,false,2,0,0.58,0,horizontal,55,31.52718,77.49355,32121.73
+0,false,2,1,0.48,1,horizontal,31,14.08281,164.1156,14766.73
+0,false,2,2,0.78,2,horizontal,90,13.55408,171.1747,13560.17
