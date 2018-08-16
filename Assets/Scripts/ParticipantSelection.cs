@@ -18,7 +18,15 @@ public class ParticipantSelection : MonoBehaviour
         {
             participantNumber = participantInput.text;
             PlayerPrefs.SetString("participant", participantNumber);
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+            Scene m_Scene = SceneManager.GetActiveScene();
+            Debug.Log(m_Scene.name);
+            if (m_Scene.name == "index")
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+            } else
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(4);
+            }
         }
         else
         {

@@ -320,7 +320,7 @@ public class WallControllerManager : MonoBehaviour {
     {
         Debug.Log("The experience is finished");
         // Calling another scene to avoid further interaction and give user a message
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
     }
 
 
